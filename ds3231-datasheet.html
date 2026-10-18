@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>DS3231 + AT24C32 RTC Breakout Module (ZS-042) Technical Datasheet</title>
+<style>
+  @page {
+    size: letter portrait;
+    margin: 10mm 12mm 10mm 12mm;
+    @bottom-right {
+      content: "Page " counter(page) " of " counter(pages);
+      font-size: 7.5pt;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      color: #718096;
+    }
+    @bottom-left {
+      content: "DS3231 + AT24C32 RTC Module (ZS-042) Specification & Modification Guide";
+      font-size: 7.5pt;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      color: #718096;
+    }
+  }
+
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    color: #1a202c;
+    line-height: 1.35;
+    font-size: 8.5pt;
+    margin: 0;
+    padding: 0;
+  }
+
+  .header {
+    border-bottom: 2px solid #2b6cb0;
+    padding-bottom: 4px;
+    margin-bottom: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+
+  .title-group h1 {
+    font-size: 15pt;
+    margin: 0 0 2px 0;
+    color: #1a365d;
+    letter-spacing: -0.3px;
+  }
+
+  .title-group h2 {
+    font-size: 9.5pt;
+    font-weight: 500;
+    margin: 0;
+    color: #4a5568;
+  }
+
+  .badge-group {
+    text-align: right;
+  }
+
+  .badge {
+    display: inline-block;
+    padding: 2px 6px;
+    font-size: 7.5pt;
+    font-weight: 600;
+    text-transform: uppercase;
+    border-radius: 3px;
+    margin-left: 3px;
+    letter-spacing: 0.4px;
+  }
+
+  .badge-blue { background: #ebf8ff; color: #2b6cb0; border: 1px solid #bee3f8; }
+  .badge-purple { background: #faf5ff; color: #6b46c1; border: 1px solid #e9d8fd; }
+  .badge-green { background: #f0fff4; color: #276749; border: 1px solid #c6f6d5; }
+
+  h3 {
+    font-size: 9.5pt;
+    color: #2b6cb0;
+    margin: 6px 0 4px 0;
+    padding-bottom: 2px;
+    border-bottom: 1px solid #e2e8f0;
+    text-transform: uppercase;
+    letter-spacing: 0.4px;
+  }
+
+  p {
+    margin: 0 0 5px 0;
+  }
+
+  ul, ol {
+    margin: 2px 0 4px 16px;
+    padding: 0;
+  }
+
+  li {
+    margin-bottom: 2px;
+  }
+
+  /* Grid layouts */
+  .row {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 6px;
+  }
+
+  .col-half {
+    flex: 1;
+  }
+
+  /* Tables */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 7.5pt;
+    margin-bottom: 4px;
+  }
+
+  th, td {
+    padding: 3px 6px;
+    text-align: left;
+    border: 1px solid #cbd5e0;
+  }
+
+  th {
+    background-color: #f7fafc;
+    color: #2d3748;
+    font-weight: 600;
+  }
+
+  tr:nth-child(even) td {
+    background-color: #f8fafc;
+  }
+
+  .code {
+    font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+    font-size: 7.5pt;
+    background: #edf2f7;
+    padding: 1px 3px;
+    border-radius: 2px;
+    color: #805ad5;
+  }
+
+  /* Diagrams */
+  .diagram-container {
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 5px;
+    padding: 6px;
+    text-align: center;
+    margin-bottom: 6px;
+  }
+
+  .diagram-caption {
+    font-size: 7.5pt;
+    color: #718096;
+    margin-top: 2px;
+    font-style: italic;
+  }
+
+  /* Warning Callout Box */
+  .callout-warning {
+    background: #fffaf0;
+    border-left: 3.5px solid #dd6b20;
+    padding: 6px 10px;
+    border-radius: 0 4px 4px 0;
+    margin: 6px 0;
+    font-size: 8pt;
+    line-height: 1.35;
+  }
+
+  .callout-warning strong {
+    color: #c05621;
+    display: block;
+    margin-bottom: 2px;
+    font-size: 8.5pt;
+  }
+
+  .callout-info {
+    background: #ebf8ff;
+    border-left: 3px solid #3182ce;
+    padding: 4px 8px;
+    border-radius: 0 4px 4px 0;
+    margin-top: 4px;
+    font-size: 7.5pt;
+  }
+
+  .links-box {
+    background: #f7fafc;
+    border: 1px solid #e2e8f0;
+    border-radius: 5px;
+    padding: 6px 10px;
+    font-size: 8pt;
+    margin-top: 4px;
+  }
+
+  .links-box ul {
+    margin: 2px 0 0 14px;
+  }
+
+  a {
+    color: #2b6cb0;
+    text-decoration: underline;
+  }
+
+  .schematic-img {
+    width: 95%;
+    max-height: 230px;
+    object-fit: contain;
+    border-radius: 4px;
+  }
+
+  .page-break {
+    page-break-before: always;
+    break-before: page;
+  }
+</style>
+</head>
+<body>
+
+<!-- ================= PAGE 1 ================= -->
+<div class="header">
+  <div class="title-group">
+    <h1>DS3231 + AT24C32 RTC Breakout</h1>
+    <h2>High-Precision Real-Time Clock &amp; 32Kb I²C EEPROM Module (Model ZS-042)</h2>
+  </div>
+  <div class="badge-group">
+    <span class="badge badge-blue">I²C Bus</span>
+    <span class="badge badge-purple">TCXO ±2ppm</span>
+    <span class="badge badge-green">3.3V – 5.5V</span>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-half">
+    <h3>1. Module Overview &amp; Features</h3>
+    <p>
+      The <strong>ZS-042</strong> breakout board combines the Maxim/Analog Devices <strong>DS3231</strong> high-precision Real-Time Clock with an Atmel/Microchip <strong>AT24C32</strong> 32-Kbit EEPROM memory chip. It features an integrated Temperature-Compensated Crystal Oscillator (TCXO) with an internal 32.768 kHz resonator, maintaining precision across temperatures.
+    </p>
+    <ul>
+      <li><strong>Clock Accuracy:</strong> &plusmn;2 ppm (0&deg;C to +40&deg;C), &plusmn;3.5 ppm (-40&deg;C to +85&deg;C)</li>
+      <li><strong>Operating Voltage:</strong> 2.3V to 5.5V DC (3.3V and 5.0V compatible)</li>
+      <li><strong>Active Current:</strong> &sim;200 &mu;A; <strong>Timekeeping Standby:</strong> &le;1.5 &mu;A</li>
+      <li><strong>Memory:</strong> 32 Kbit (4,096 x 8-bit) non-volatile I²C EEPROM</li>
+      <li><strong>Calendar Features:</strong> Seconds, minutes, hours, day, date, month, year with leap-year compensation valid up to year 2100</li>
+      <li><strong>Alarms &amp; Waveform:</strong> 2 programmable alarms, 32.768 kHz &amp; configurable square-wave interrupt outputs</li>
+    </ul>
+  </div>
+
+  <div class="col-half">
+    <h3>2. Pinout &amp; Header Specifications</h3>
+    <table>
+      <thead>
+        <tr>
+          <th>Pin</th>
+          <th>Type</th>
+          <th>Function &amp; Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><span class="code">32K</span></td>
+          <td>Output</td>
+          <td>32.768 kHz TCXO output (open-drain; needs external pull-up)</td>
+        </tr>
+        <tr>
+          <td><span class="code">SQW</span></td>
+          <td>Output</td>
+          <td>Active-low alarm interrupt or programmable square-wave</td>
+        </tr>
+        <tr>
+          <td><span class="code">SCL</span></td>
+          <td>Input</td>
+          <td>I²C Clock line (onboard 4.7 k&Omega; pull-up to VCC)</td>
+        </tr>
+        <tr>
+          <td><span class="code">SDA</span></td>
+          <td>I/O</td>
+          <td>I²C Data line (onboard 4.7 k&Omega; pull-up to VCC)</td>
+        </tr>
+        <tr>
+          <td><span class="code">VCC</span></td>
+          <td>Power</td>
+          <td>Main power supply: <strong>3.3V to 5.5V DC</strong></td>
+        </tr>
+        <tr>
+          <td><span class="code">GND</span></td>
+          <td>Power</td>
+          <td>System ground reference (0V)</td>
+        </tr>
+      </tbody>
+    </table>
+    <div class="callout-info">
+      <strong>I²C Slave Addresses:</strong><br>
+      &bull; <strong>DS3231 RTC:</strong> <span class="code">0x68</span> (Fixed)<br>
+      &bull; <strong>AT24C32 EEPROM:</strong> <span class="code">0x57</span> (Default; address pads A0, A1, A2 selectable from 0x50 to 0x57)
+    </div>
+  </div>
+</div>
+
+<h3>3. Physical Dimensions &amp; Mechanical Layout</h3>
+<div class="diagram-container">
+  <!-- Dimensioned SVG Technical Diagram -->
+  <svg viewBox="0 0 720 225" width="100%" height="185" xmlns="http://www.w3.org/2000/svg" style="font-family: -apple-system, sans-serif;">
+    <defs>
+      <marker id="arrow" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse">
+        <path d="M 0 1.5 L 10 5 L 0 8.5 z" fill="#2b6cb0"/>
+      </marker>
+    </defs>
+
+    <!-- TOP VIEW (LEFT) -->
+    <g transform="translate(35, 18)">
+      <text x="155" y="-5" text-anchor="middle" font-size="10.5" font-weight="700" fill="#2d3748">TOP VIEW (PRIMARY COMPONENT SIDE)</text>
+      
+      <!-- PCB Outline: 38mm x 22mm (Scale: 8px = 1mm => 304px x 176px) -->
+      <rect x="0" y="8" width="304" height="155" rx="7" fill="#1b4d3e" stroke="#13372c" stroke-width="2"/>
+      
+      <!-- Silkscreen & ICs -->
+      <!-- DS3231 SOIC-16 -->
+      <rect x="135" y="42" width="95" height="88" rx="3" fill="#222" stroke="#444" stroke-width="1.5"/>
+      <circle cx="145" cy="52" r="2.5" fill="#666"/>
+      <text x="182" y="84" text-anchor="middle" font-size="9" font-weight="600" fill="#e2e8f0" letter-spacing="0.8">DS3231SN</text>
+      <text x="182" y="97" text-anchor="middle" font-size="6.5" fill="#a0aec0">TCXO RTC</text>
+      
+      <!-- Pins for DS3231 -->
+      <g fill="#a0aec0">
+        <rect x="124" y="48" width="11" height="5" rx="1"/>
+        <rect x="124" y="61" width="11" height="5" rx="1"/>
+        <rect x="124" y="74" width="11" height="5" rx="1"/>
+        <rect x="124" y="87" width="11" height="5" rx="1"/>
+        <rect x="124" y="100" width="11" height="5" rx="1"/>
+        <rect x="124" y="113" width="11" height="5" rx="1"/>
+        
+        <rect x="230" y="48" width="11" height="5" rx="1"/>
+        <rect x="230" y="61" width="11" height="5" rx="1"/>
+        <rect x="230" y="74" width="11" height="5" rx="1"/>
+        <rect x="230" y="87" width="11" height="5" rx="1"/>
+        <rect x="230" y="100" width="11" height="5" rx="1"/>
+        <rect x="230" y="113" width="11" height="5" rx="1"/>
+      </g>
+      
+      <!-- AT24C32 SOIC-8 -->
+      <rect x="70" y="35" width="42" height="44" rx="2" fill="#222" stroke="#444" stroke-width="1.2"/>
+      <text x="91" y="60" text-anchor="middle" font-size="7.5" fill="#e2e8f0">24C32</text>
+      
+      <!-- Power LED -->
+      <rect x="75" y="105" width="14" height="9" rx="1.5" fill="#3182ce"/>
+      <text x="82" y="122" text-anchor="middle" font-size="6.5" fill="#cbd5e0">PWR</text>
+      
+      <!-- Charging Diode & Resistor D1 & 201 -->
+      <rect x="246" y="24" width="15" height="8" rx="1.5" fill="#c53030" stroke="#fff" stroke-width="0.8"/>
+      <text x="253" y="19" text-anchor="middle" font-size="7" font-weight="700" fill="#fc8181">D1</text>
+      
+      <rect x="267" y="24" width="13" height="8" rx="1.5" fill="#333" stroke="#fff" stroke-width="0.6"/>
+      <text x="273" y="19" text-anchor="middle" font-size="6" fill="#e2e8f0">201</text>
+      
+      <!-- 6-Pin Connector (Left Edge) -->
+      <g transform="translate(10, 16)">
+        <rect x="-3" y="0" width="14" height="138" fill="#2d3748" rx="2"/>
+        <circle cx="4" cy="11" r="4" fill="#ecc94b" stroke="#744210" stroke-width="1.2"/>
+        <circle cx="4" cy="33" r="4" fill="#ecc94b" stroke="#744210" stroke-width="1.2"/>
+        <circle cx="4" cy="55" r="4" fill="#ecc94b" stroke="#744210" stroke-width="1.2"/>
+        <circle cx="4" cy="77" r="4" fill="#ecc94b" stroke="#744210" stroke-width="1.2"/>
+        <circle cx="4" cy="99" r="4" fill="#ecc94b" stroke="#744210" stroke-width="1.2"/>
+        <circle cx="4" cy="121" r="4" fill="#ecc94b" stroke="#744210" stroke-width="1.2"/>
+        
+        <text x="16" y="14" font-size="7" font-weight="600" fill="#fff">32K</text>
+        <text x="16" y="36" font-size="7" font-weight="600" fill="#fff">SQW</text>
+        <text x="16" y="58" font-size="7" font-weight="600" fill="#fff">SCL</text>
+        <text x="16" y="80" font-size="7" font-weight="600" fill="#fff">SDA</text>
+        <text x="16" y="102" font-size="7" font-weight="600" fill="#fff">VCC</text>
+        <text x="16" y="124" font-size="7" font-weight="600" fill="#fff">GND</text>
+      </g>
+      
+      <!-- Dimension: 38.0 mm (Length) -->
+      <line x1="0" y1="175" x2="304" y2="175" stroke="#2b6cb0" stroke-width="1.3" marker-start="url(#arrow)" marker-end="url(#arrow)"/>
+      <line x1="0" y1="166" x2="0" y2="180" stroke="#718096" stroke-width="0.8"/>
+      <line x1="304" y1="166" x2="304" y2="180" stroke="#718096" stroke-width="0.8"/>
+      <text x="152" y="188" text-anchor="middle" font-size="9" font-weight="700" fill="#2b6cb0">38.0 mm [1.50 in]</text>
+
+      <!-- Dimension: 22.0 mm (Width) -->
+      <line x1="-14" y1="8" x2="-14" y2="163" stroke="#2b6cb0" stroke-width="1.3" marker-start="url(#arrow)" marker-end="url(#arrow)"/>
+      <line x1="-19" y1="8" x2="-9" y2="8" stroke="#718096" stroke-width="0.8"/>
+      <line x1="-19" y1="163" x2="-9" y2="163" stroke="#718096" stroke-width="0.8"/>
+      <text x="-21" y="88" text-anchor="middle" font-size="9" font-weight="700" fill="#2b6cb0" transform="rotate(-90 -21 88)">22.0 mm [0.87 in]</text>
+    </g>
+
+    <!-- SIDE / PROFILE VIEW (RIGHT) -->
+    <g transform="translate(450, 18)">
+      <text x="110" y="-5" text-anchor="middle" font-size="10.5" font-weight="700" fill="#2d3748">SIDE PROFILE VIEW (STACKUP)</text>
+      
+      <!-- PCB Core (1.6mm => 12px) -->
+      <rect x="20" y="70" width="175" height="12" rx="1.5" fill="#1b4d3e" stroke="#13372c" stroke-width="1"/>
+      <text x="107" y="79" text-anchor="middle" font-size="7" fill="#a0aec0">PCB FR-4 (1.6 mm)</text>
+      
+      <!-- Top Components (ICs ~2.5mm => 18px) -->
+      <rect x="50" y="54" width="65" height="16" fill="#222" rx="1.5"/>
+      <text x="82" y="65" text-anchor="middle" font-size="6.5" fill="#e2e8f0">DS3231 IC</text>
+      
+      <!-- Header Pin Profile -->
+      <rect x="25" y="24" width="5" height="46" fill="#ecc94b" stroke="#744210" stroke-width="0.7"/>
+      <rect x="22" y="47" width="11" height="23" fill="#2d3748" rx="1"/>
+      
+      <!-- Bottom Battery Holder & CR2032 Cell (~9.5mm => 70px) -->
+      <path d="M 38 82 L 38 142 Q 38 152 48 152 L 165 152 Q 175 152 175 142 L 175 82 Z" fill="#718096" stroke="#4a5568" stroke-width="1.3"/>
+      <rect x="46" y="93" width="120" height="43" rx="3" fill="#e2e8f0" stroke="#cbd5e0" stroke-width="0.8"/>
+      <text x="106" y="116" text-anchor="middle" font-size="8" font-weight="600" fill="#2d3748">CR2032 / LIR2032</text>
+      <text x="106" y="127" text-anchor="middle" font-size="6.5" fill="#718096">Coin Cell Socket (Backside)</text>
+      
+      <!-- Height Dimension: 14.0 mm -->
+      <line x1="205" y1="54" x2="205" y2="152" stroke="#2b6cb0" stroke-width="1.3" marker-start="url(#arrow)" marker-end="url(#arrow)"/>
+      <line x1="197" y1="54" x2="213" y2="54" stroke="#718096" stroke-width="0.8"/>
+      <line x1="197" y1="152" x2="213" y2="152" stroke="#718096" stroke-width="0.8"/>
+      <text x="214" y="100" font-size="8.5" font-weight="700" fill="#2b6cb0">14.0 mm</text>
+      <text x="214" y="111" font-size="7" fill="#718096">(Max Height)</text>
+      
+      <text x="107" y="188" text-anchor="middle" font-size="8" font-weight="600" fill="#4a5568">Pin Pitch: 2.54 mm (0.1") | Pin Span: 12.7 mm</text>
+    </g>
+  </svg>
+  <div class="diagram-caption">Figure 1: ZS-042 Mechanical Dimensioning, Component Placements, and Side Profile Stackup.</div>
+</div>
+
+<div class="links-box">
+  <strong>Key Technical References &amp; Datasheet Links:</strong>
+  <ul>
+    <li><strong>Maxim / Analog Devices DS3231 RTC IC:</strong> <a href="https://www.analog.com/media/en/technical-documentation/data-sheets/DS3231.pdf">https://www.analog.com/media/en/technical-documentation/data-sheets/DS3231.pdf</a></li>
+    <li><strong>Microchip AT24C32D 32Kb I²C EEPROM:</strong> <a href="https://ww1.microchip.com/downloads/a5/documents/MEE/DataSheet/AT24C32D-32-Kbit-I2C-Serial-EEPROM-20006047B.pdf">https://ww1.microchip.com/downloads/a5/documents/MEE/DataSheet/AT24C32D-32-Kbit-I2C-Serial-EEPROM-20006047B.pdf</a></li>
+    <li><strong>3D STEP CAD Model:</strong> Saved in project repository at <span class="code">models/ds3231_rtc.step</span></li>
+  </ul>
+</div>
+
+<!-- ================= PAGE 2 ================= -->
+<div class="page-break"></div>
+
+<div class="header">
+  <div class="title-group">
+    <h1>DS3231 Module Circuit &amp; Battery Modification</h1>
+    <h2>CR2032 vs LIR2032 Safe Operation &amp; Schematic Analysis</h2>
+  </div>
+  <div class="badge-group">
+    <span class="badge badge-blue">Hardware Safety Guide</span>
+  </div>
+</div>
+
+<div class="callout-warning">
+  <strong>CRITICAL BATTERY SAFETY NOTICE: DIODE MODIFICATION REQUIRED FOR CR2032</strong>
+  The ZS-042 breakout board comes factory-wired with an active trickle-charging circuit designed <em>only</em> for <strong>rechargeable lithium-ion LIR2032</strong> cells (3.6V nominal, 4.2V max). 
+  If you install a standard, non-rechargeable <strong>CR2032 Lithium Manganese Dioxide</strong> coin cell (3.0V primary battery) and power the module with 5V, continuous charging current will be forced through diode <strong>D1</strong> and resistor <strong>R1 (201)</strong> directly into the non-rechargeable cell. Over time, this causes electrolyte boiling, gas generation, battery swelling, chemical leakage, and potential cell rupture.
+</div>
+
+<div class="row">
+  <div class="col-half">
+    <h3>4. Battery Types Comparison</h3>
+    <table>
+      <thead>
+        <tr>
+          <th>Parameter</th>
+          <th>CR2032 (Standard)</th>
+          <th>LIR2032 (Rechargeable)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>Chemistry</strong></td>
+          <td>Li-MnO₂ (Primary / Disposable)</td>
+          <td>Li-Ion (Secondary / Rechargeable)</td>
+        </tr>
+        <tr>
+          <td><strong>Nominal Voltage</strong></td>
+          <td>3.0 V (Fresh: 3.2 V)</td>
+          <td>3.6 V (Peak Charge: 4.2 V)</td>
+        </tr>
+        <tr>
+          <td><strong>Capacity</strong></td>
+          <td>&sim;210 – 240 mAh</td>
+          <td>&sim;35 – 70 mAh</td>
+        </tr>
+        <tr>
+          <td><strong>Shelf Life</strong></td>
+          <td>8 – 10 years</td>
+          <td>Self-discharges in &sim;2–4 months</td>
+        </tr>
+        <tr>
+          <td><strong>Recharging</strong></td>
+          <td><strong style="color: #c53030;">STRICTLY FORBIDDEN</strong></td>
+          <td>Required</td>
+        </tr>
+        <tr>
+          <td><strong>Recommended for RTC?</strong></td>
+          <td><strong>YES (with diode removed)</strong></td>
+          <td>No (poor longevity in RTCs)</td>
+        </tr>
+      </tbody>
+    </table>
+    
+    <h3>5. How to Modify Board for CR2032</h3>
+    <ol style="font-size: 7.8pt;">
+      <li>Locate diode <strong>D1</strong> (labeled with red line/triangle, adjacent to resistor marked <strong>201</strong>) near the positive battery terminal pad.</li>
+      <li><strong>Method A (Recommended):</strong> Touch a soldering iron tip to both ends of <strong>D1</strong> and flick it off the PCB pads.</li>
+      <li><strong>Method B:</strong> Snip or crush diode <strong>D1</strong> in half using micro flush cutters to break the circuit.</li>
+      <li><em>Alternative:</em> Alternatively desolder or remove resistor <strong>201</strong> (200 &Omega;).</li>
+    </ol>
+  </div>
+
+  <div class="col-half">
+    <h3>6. Diode Locator Diagram</h3>
+    <div class="diagram-container">
+      <svg viewBox="0 0 310 190" width="100%" height="165" xmlns="http://www.w3.org/2000/svg" style="font-family: -apple-system, sans-serif;">
+        <defs>
+          <marker id="arrow-red" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse">
+            <path d="M 0 1.5 L 10 5 L 0 8.5 z" fill="#c53030"/>
+          </marker>
+        </defs>
+        <!-- Board detail zoom around D1 and 201 -->
+        <rect x="8" y="8" width="294" height="174" rx="6" fill="#1b4d3e" stroke="#13372c" stroke-width="1.5"/>
+        <text x="20" y="24" font-size="8" font-weight="700" fill="#a0aec0">BOARD DETAIL (TOP-RIGHT CORNER)</text>
+        
+        <!-- Battery positive clip pad -->
+        <rect x="220" y="32" width="72" height="135" rx="5" fill="#718096" stroke="#a0aec0" stroke-width="1.2"/>
+        <text x="256" y="105" text-anchor="middle" font-size="11" font-weight="700" fill="#fff">BAT (+)</text>
+        
+        <!-- Trace from VCC -->
+        <path d="M 25 90 L 50 90 L 50 50 L 80 50" fill="none" stroke="#ecc94b" stroke-width="3"/>
+        <text x="25" y="83" font-size="7" font-weight="700" fill="#ecc94b">VCC RAIL</text>
+        
+        <!-- DIODE D1 -->
+        <g transform="translate(80, 40)">
+          <rect x="0" y="0" width="30" height="20" rx="2.5" fill="#c53030" stroke="#fff" stroke-width="1.2"/>
+          <line x1="7" y1="0" x2="7" y2="20" stroke="#fff" stroke-width="2"/>
+          <text x="18" y="13" text-anchor="middle" font-size="8" font-weight="700" fill="#fff">D1</text>
+        </g>
+        
+        <!-- Trace between D1 and Resistor -->
+        <line x1="110" y1="50" x2="130" y2="50" stroke="#ecc94b" stroke-width="3"/>
+        
+        <!-- RESISTOR 201 -->
+        <g transform="translate(130, 41)">
+          <rect x="0" y="0" width="26" height="18" rx="2" fill="#2d3748" stroke="#fff" stroke-width="0.8"/>
+          <text x="13" y="12" text-anchor="middle" font-size="7" font-weight="700" fill="#e2e8f0">201</text>
+        </g>
+        
+        <!-- Trace from Resistor to BAT+ -->
+        <line x1="156" y1="50" x2="220" y2="50" stroke="#ecc94b" stroke-width="3"/>
+        
+        <!-- Desolder Warning Callout -->
+        <circle cx="95" cy="50" r="20" fill="none" stroke="#e53e3e" stroke-width="2" stroke-dasharray="3 2"/>
+        
+        <!-- Callout box -->
+        <g transform="translate(30, 115)">
+          <rect x="-6" y="-8" width="135" height="44" rx="4" fill="#fff" stroke="#e53e3e" stroke-width="1.2"/>
+          <text x="2" y="8" font-size="8" font-weight="800" fill="#c53030">&times; DESOLDER OR CUT</text>
+          <text x="2" y="21" font-size="7" font-weight="600" fill="#4a5568">Diode D1 (1N4148)</text>
+          <text x="2" y="30" font-size="6" fill="#718096">Disables reverse trickle charge</text>
+          <path d="M 85 -2 L 55 -45" fill="none" stroke="#c53030" stroke-width="1.2" marker-end="url(#arrow-red)"/>
+        </g>
+      </svg>
+      <div class="diagram-caption">Figure 2: Component Locator for Diode D1 and Resistor 201 (200 &Omega;).</div>
+    </div>
+  </div>
+</div>
+
+<h3>7. Complete Module Schematic (ZS-042 Circuit Diagram)</h3>
+<div class="diagram-container" style="text-align: center; padding: 4px; margin-bottom: 0;">
+  <img src="ds3231_schematic.jpg" alt="ZS-042 DS3231 Schematic Diagram" class="schematic-img">
+  <div class="diagram-caption">Figure 3: Full ZS-042 schematic depicting DS3231 RTC, AT24C32 EEPROM, I²C pull-up network, and the VCC-to-VBAT charging branch.</div>
+</div>
+
+</body>
+</html>

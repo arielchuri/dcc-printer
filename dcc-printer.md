@@ -1,31 +1,31 @@
 # DCC Printer (Dungeon Crawl Classics Thermal Receipt Generator)
 
-An electromechanical gaming artifact and tabletop prop that prints procedurally generated *Dungeon Crawl Classics* (DCC) RPG tables, 0-level characters, and creatures onto 58mm thermal paper.
+An electromechanical gaming artifact and tabletop prop that prints procedurally generated _Dungeon Crawl Classics_ (DCC) RPG tables, 0-level characters, and creatures onto 58mm thermal paper.
 
 ---
 
 ## 1. Bill of Materials & Component Specifications
 
-| Component | Description | Reference | Specifications |
-| :--- | :--- | :--- | :--- |
-| **Thermal Printer** | Cashino CSN-A2 Panel | [cashino.pdf](cashino-printer.pdf) | 58mm roll (48mm print width) |
-| | Panel Mount Printer | | TTL UART 9600, 5V–9V (≥2A) |
-| **Rotary Switch** | SR16A-18-15KQ | [rotary.pdf](rotary-switch-SR16A-18-15KQ.pdf) | 1-pole 8-position selector |
-| | 8-Position Switch | | 15mm round knurled shaft |
-| **Knob** | Pointer Control Knob | [knob.pdf](knob.pdf) | Knurled shaft pointer |
-| | Metal / Plastic | | Position indicator line |
-| **Trigger Button** | Illuminated Triangle | [button.jpg](triangle-button.jpg) | Momentary microswitch |
-| | Arcade Pushbutton | | Integrated PWM glow LED |
-| **Microcontroller** | Raspberry Pi Pico | Standard 40-pin DIP | Dual-core Cortex-M0+ |
-| | RP2040 Board | | CircuitPython runtime |
-| **OLED Display** | SSD1306 Monochrome | I2C (Address `0x3C`) | 128x32 or 128x64 display |
-| | 0.91" / 0.96" Screen | | Mode & status screen |
-| **Real-Time Clock** | DS3231 Precision RTC | I2C (Address `0x68`) | Battery-backed clock |
-| | Module with CR2032 | | Receipt real-time stamp |
-| **Power Socket** | 5.5 x 2.1mm DC Jack | Panel Mount | 5V DC input rated |
-| | Barrel Connector | | 3.0A minimum capacity |
-| **Power Switch** | Latching SPST Switch | In-line 5V DC line | Main system power cut-off |
-| | Rocker / Toggle | | Rated for ≥3A DC |
+| Component           | Description          | Reference                                     | Specifications               |
+| :------------------ | :------------------- | :-------------------------------------------- | :--------------------------- |
+| **Thermal Printer** | Cashino CSN-A2 Panel | [cashino.pdf](cashino-printer.pdf)            | 58mm roll (48mm print width) |
+|                     | Panel Mount Printer  |                                               | TTL UART 9600, 5V–9V (≥2A)   |
+| **Rotary Switch**   | SR16A-18-15KQ        | [rotary.pdf](rotary-switch-SR16A-18-15KQ.pdf) | 1-pole 8-position selector   |
+|                     | 8-Position Switch    |                                               | 15mm round knurled shaft     |
+| **Knob**            | Pointer Control Knob | [knob.pdf](knob.pdf)                          | Knurled shaft pointer        |
+|                     | Metal / Plastic      |                                               | Position indicator line      |
+| **Trigger Button**  | Illuminated Triangle | [button.jpg](triangle-button.jpg)             | Momentary microswitch        |
+|                     | Arcade Pushbutton    |                                               | Integrated PWM glow LED      |
+| **Microcontroller** | Raspberry Pi Pico    | Standard 40-pin DIP                           | Dual-core Cortex-M0+         |
+|                     | RP2040 Board         |                                               | CircuitPython runtime        |
+| **Character LCD**   | LCD1602 + PCF8574    | [lcd1602.pdf](lcd1602-i2c-module.pdf)        | 16x2 Character Display       |
+|                     | I2C Backpack Module  | [CAD Model](models/lcd1602.step)              | I2C Address `0x27` / `0x3F`  |
+| **Real-Time Clock** | DS3231 Precision RTC | [ds3231.pdf](ds3231-rtc-module.pdf)          | Battery-backed clock         |
+|                     | Module with CR2032   | [CAD Model](models/ds3231_rtc.step)           | Receipt real-time stamp      |
+| **Power Socket**    | 5.5 x 2.1mm DC Jack  | Panel Mount                                   | 5V DC input rated            |
+|                     | Barrel Connector     |                                               | 3.0A minimum capacity        |
+| **Power Switch**    | Latching SPST Switch | In-line 5V DC line                            | Main system power cut-off    |
+|                     | Rocker / Toggle      |                                               | Rated for ≥3A DC             |
 
 ---
 
