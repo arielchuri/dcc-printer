@@ -1,5 +1,9 @@
 # DCC Printer (Dungeon Crawl Classics Thermal Receipt Generator)
 
+- **Status**: active
+- **Domain**: game
+- **Goal**: Electromechanical tabletop gaming artifact that prints procedurally generated DCC/MCC tables, 0-level funnels, and creatures onto 58mm thermal paper.
+
 An electromechanical gaming artifact and tabletop prop that prints procedurally generated *Dungeon Crawl Classics* (DCC) RPG tables, 0-level characters, and creatures onto 58mm thermal paper.
 
 ---
@@ -18,10 +22,10 @@ An electromechanical gaming artifact and tabletop prop that prints procedurally 
 | | Arcade Pushbutton | | Integrated PWM glow LED |
 | **Microcontroller** | Raspberry Pi Pico | Standard 40-pin DIP | Dual-core Cortex-M0+ |
 | | RP2040 Board | | CircuitPython runtime |
-| **OLED Display** | SSD1306 Monochrome | I2C (Address `0x3C`) | 128x32 or 128x64 display |
-| | 0.91" / 0.96" Screen | | Mode & status screen |
-| **Real-Time Clock** | DS3231 Precision RTC | I2C (Address `0x68`) | Battery-backed clock |
-| | Module with CR2032 | | Receipt real-time stamp |
+| **Character LCD** | LCD1602 + PCF8574 | [lcd1602.pdf](lcd1602-i2c-module.pdf) | 16x2 Character Display |
+| | I2C Backpack Module | [CAD Model](models/lcd1602.step) | I2C Address `0x27` / `0x3F` |
+| **Real-Time Clock** | DS3231 Precision RTC | [ds3231.pdf](ds3231-rtc-module.pdf) | Battery-backed clock |
+| | Module with CR2032 | [CAD Model](models/ds3231_rtc.step) | Receipt real-time stamp |
 | **Power Socket** | 5.5 x 2.1mm DC Jack | Panel Mount | 5V DC input rated |
 | | Barrel Connector | | 3.0A minimum capacity |
 | **Power Switch** | Latching SPST Switch | In-line 5V DC line | Main system power cut-off |
@@ -63,9 +67,20 @@ The project specifications and engineering guides are divided into modular docum
 ## 3. Hardware Assembly Checklist
 
 - [ ] Solder 40-pin header pins to the Raspberry Pi Pico.
-- [ ] Connect I2C bus (`GP0` SDA, `GP1` SCL) with shared 3.3V power to SSD1306 and DS3231.
+- [ ] Connect I2C bus (`GP0` SDA, `GP1` SCL) with shared 3.3V power to LCD1602 (PCF8574 backpack) and DS3231.
 - [ ] Connect UART1 TX (`GP4`) to Cashino RX and UART1 RX (`GP5`) to Cashino TX.
 - [ ] Wire rotary switch positions 1–8 to pins `GP6` through `GP13` with rotary common to logic GND.
 - [ ] Wire triangle button microswitch to `GP14` and button LED anode to `GP15` (PWM).
 - [ ] Install 470µF–1000µF capacitor across the Cashino power connector.
 - [ ] Establish **low-impedance star ground** from DC power jack negative terminal.
+
+---
+
+## 4. Device Art Capstone Submission (PSAM 2230)
+
+This project also serves as the final capstone for **PSAM 2230 Device Art** (Parsons School of Design). All academic deliverables, design milestones, visual research, mechanical drawings, laser-cut templates, and exhibition documentation are organized in the **[device-art-project](device-art-project/README.md)** directory:
+
+- **[Milestone 1: Proposal & Miro Board](device-art-project/01_proposal/milestone_01_proposal.md)**: Concept narrative, user interaction loop, artistic precedents, and BOM.
+- **[Milestone 2: Systems Architecture](device-art-project/02_systems/milestone_02_systems.md)**: State machine, pseudo-code, wiring schematic, and working CircuitPython firmware.
+- **[Milestone 3: Enclosure & CAD](device-art-project/03_enclosure/milestone_03_enclosure.md)**: Enclosure drawings, 2D laser-cut SVG, and 3D STEP models.
+- **[Final Exhibition Package](device-art-project/04_final_submission/final_capstone_submission.md)**: Learning Portfolio post, artist statement, video storyboard, and photography plan.

@@ -1,0 +1,155 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 820" width="1080" height="820" style="background:#ffffff; font-family: -apple-system, sans-serif;">
+  <defs>
+    <style>
+      .cut { stroke: #ff0000; stroke-width: 1; fill: none; }
+      .engrave { fill: #0000ff; font-family: -apple-system, sans-serif; }
+      .label { fill: #2d3748; font-size: 11px; font-weight: bold; }
+      .dim { stroke: #718096; stroke-width: 0.5; stroke-dasharray: 2,2; fill: none; }
+      .dim-text { fill: #718096; font-size: 8px; }
+    </style>
+  </defs>
+
+  <!-- TITLE BLOCK -->
+  <text x="30" y="30" class="label" font-size="16">DCC PRINTER — 3.0mm (1/8") CAST ACRYLIC / WOOD LASER CUT SHEET</text>
+  <text x="30" y="48" fill="#718096" font-size="10">All dimensions in millimeters (Kerf offset: 0.15mm) | Red = Vector Cut (#FF0000) | Blue = Surface Engrave (#0000FF)</text>
+
+  <!-- PANEL 1: TOP CONSOLE (X: 30, Y: 70, Width: 300, Height: 220 -> scaled 2:1 for 150x110 mm) -->
+  <!-- Let 1mm = 2px. 150mm -> 300px, 110mm -> 220px -->
+  <g transform="translate(40, 80)">
+    <text x="0" y="-10" class="label">1. TOP OPERATOR CONSOLE (150 x 110 mm)</text>
+    
+    <!-- Outer perimeter cut with finger joint notches -->
+    <rect x="0" y="0" width="300" height="220" rx="4" class="cut"/>
+    
+    <!-- LCD 1602 Display Aperture: 64.5mm x 16.0mm -> 129px x 32px -->
+    <!-- Positioned at X: 20mm (40px), Y: 25mm (50px) -->
+    <rect x="35" y="45" width="129" height="32" rx="2" class="cut"/>
+    <!-- 4 Mounting Holes: 75.0mm x 31.0mm pitch -> 150px x 62px -->
+    <!-- Center of aperture is X = 35 + 64.5 = 99.5. Holes centered at 99.5: X = 99.5 +/- 75 = 24.5 and 174.5 -->
+    <!-- Center Y = 45 + 16 = 61. Holes Y = 61 +/- 31 = 30 and 92 -->
+    <circle cx="24.5" cy="30" r="3.2" class="cut"/>
+    <circle cx="174.5" cy="30" r="3.2" class="cut"/>
+    <circle cx="24.5" cy="92" r="3.2" class="cut"/>
+    <circle cx="174.5" cy="92" r="3.2" class="cut"/>
+    <text x="99.5" y="40" class="engrave" font-size="7" font-weight="bold" text-anchor="middle">LCD 1602 APERTURE (64.5 x 16 mm)</text>
+
+    <!-- Rotary Switch: Bushing Dia 9.0mm -> r=9px. Positioned at X: 240, Y: 60 -->
+    <circle cx="240" cy="60" r="9" class="cut"/>
+    <!-- Anti-rotation pin: Dia 3.0mm at 9.5mm radius (19px left at X: 221) -->
+    <circle cx="221" cy="60" r="3" class="cut"/>
+    <text x="240" y="40" class="engrave" font-size="7" font-weight="bold" text-anchor="middle">MODE SELECTOR (SR16A)</text>
+    <!-- Dial tick marks (8 positions) -->
+    <circle cx="240" cy="35" r="2" fill="#0000ff"/>
+    <circle cx="258" cy="42" r="2" fill="#0000ff"/>
+    <circle cx="265" cy="60" r="2" fill="#0000ff"/>
+    <circle cx="258" cy="78" r="2" fill="#0000ff"/>
+    <circle cx="240" cy="85" r="2" fill="#0000ff"/>
+    <circle cx="222" cy="78" r="2" fill="#0000ff"/>
+    <circle cx="215" cy="60" r="2" fill="#0000ff"/>
+    <circle cx="222" cy="42" r="2" fill="#0000ff"/>
+    <text x="240" y="30" class="engrave" font-size="6" text-anchor="middle">1</text>
+    <text x="272" y="62" class="engrave" font-size="6" text-anchor="middle">3</text>
+    <text x="240" y="94" class="engrave" font-size="6" text-anchor="middle">5</text>
+    <text x="208" y="62" class="engrave" font-size="6" text-anchor="middle">7</text>
+
+    <!-- Triangle Button: Hole Dia 24.0mm -> r=24px. Positioned at X: 150, Y: 150 -->
+    <circle cx="150" cy="150" r="24" class="cut"/>
+    <!-- Triangle graphic engraved around button -->
+    <polygon points="150,118 122,168 178,168" stroke="#0000ff" stroke-width="1.5" fill="none"/>
+    <text x="150" y="185" class="engrave" font-size="8" font-weight="bold" text-anchor="middle">DISPENSE FATE</text>
+
+    <!-- Header Branding Engrave -->
+    <text x="150" y="16" class="engrave" font-size="10" font-weight="bold" text-anchor="middle">DUNGEON CRAWL CLASSICS ORACLE</text>
+  </g>
+
+  <!-- PANEL 2: FRONT FACADE PANEL (X: 380, Y: 80, 150 x 130 mm -> 300 x 260 px) -->
+  <g transform="translate(380, 80)">
+    <text x="0" y="-10" class="label">2. FRONT FACADE PANEL (150 x 130 mm)</text>
+    <rect x="0" y="0" width="300" height="260" rx="4" class="cut"/>
+    
+    <!-- Cashino CSN-A2 Thermal Printer Aperture: 103.0mm x 57.0mm -> 206px x 114px -->
+    <!-- Centered at X = (300 - 206)/2 = 47, Y = 60 -->
+    <rect x="47" y="60" width="206" height="114" rx="3" class="cut"/>
+    <text x="150" y="50" class="engrave" font-size="8" font-weight="bold" text-anchor="middle">CASHINO CSN-A2 CUTOUT (103 x 57 mm)</text>
+    
+    <!-- Decorative Engraving -->
+    <text x="150" y="210" class="engrave" font-size="9" font-weight="bold" text-anchor="middle">THERMAL ORACLE DISPENSE SLOT</text>
+    <line x1="47" y1="220" x2="253" y2="220" stroke="#0000ff" stroke-width="1"/>
+  </g>
+
+  <!-- PANEL 3: REAR INTERFACE PANEL (X: 720, Y: 80, 150 x 130 mm -> 300 x 260 px) -->
+  <g transform="translate(710, 80)">
+    <text x="0" y="-10" class="label">3. REAR INTERFACE PANEL (150 x 130 mm)</text>
+    <rect x="0" y="0" width="260" height="260" rx="4" class="cut"/>
+    
+    <!-- DC Power Jack: Dia 8.0mm -> r=8px at X: 60, Y: 80 -->
+    <circle cx="60" cy="80" r="8" class="cut"/>
+    <text x="60" y="60" class="engrave" font-size="7" font-weight="bold" text-anchor="middle">5V DC IN</text>
+    <text x="60" y="102" class="engrave" font-size="6" text-anchor="middle">(5.5 x 2.1mm)</text>
+
+    <!-- SPST Power Switch: 19.2mm x 12.9mm -> 38.4px x 25.8px at X: 140, Y: 67 -->
+    <rect x="140" y="67" width="38.4" height="25.8" rx="1" class="cut"/>
+    <text x="159" y="60" class="engrave" font-size="7" font-weight="bold" text-anchor="middle">MAIN POWER</text>
+    <text x="159" y="106" class="engrave" font-size="6" text-anchor="middle">[19.2 x 12.9 mm]</text>
+
+    <!-- Pico Micro-USB / USB-C Port Slot: 12.0mm x 7.0mm -> 24px x 14px at X: 100, Y: 160 -->
+    <rect x="88" y="160" width="24" height="14" rx="2" class="cut"/>
+    <text x="100" y="152" class="engrave" font-size="7" font-weight="bold" text-anchor="middle">USB-C / PROG</text>
+
+    <!-- Compliance / Spec Engrave -->
+    <text x="130" y="225" class="engrave" font-size="7" text-anchor="middle">DEVICE ART CAPSTONE — 2026</text>
+    <text x="130" y="238" class="engrave" font-size="6" text-anchor="middle">5V DC 3A MAX | STAR GROUNDED</text>
+  </g>
+
+  <!-- ROW 2: SIDE PANELS & BASE PANEL -->
+  <!-- PANEL 4 & 5: LEFT & RIGHT ANGLED SIDE PANELS (110 x 130 mm with 15 deg slant) -->
+  <g transform="translate(40, 370)">
+    <text x="0" y="-10" class="label">4. LEFT SIDE PANEL (110 x 130 mm)</text>
+    <!-- Polygon with 15 degree slope on top: (0, 30) to (220, 0) to (220, 260) to (0, 260) -->
+    <polygon points="0,40 220,0 220,260 0,260" class="cut"/>
+    <!-- Ventilation / acoustic grille slots -->
+    <rect x="40" y="120" width="8" height="60" rx="3" class="cut"/>
+    <rect x="60" y="120" width="8" height="60" rx="3" class="cut"/>
+    <rect x="80" y="120" width="8" height="60" rx="3" class="cut"/>
+    <text x="110" y="150" class="engrave" font-size="7" font-weight="bold">ACOUSTIC GRILLE</text>
+  </g>
+
+  <g transform="translate(300, 370)">
+    <text x="0" y="-10" class="label">5. RIGHT SIDE PANEL (110 x 130 mm)</text>
+    <!-- Mirrored polygon: (0, 0) to (220, 40) to (220, 260) to (0, 260) -->
+    <polygon points="0,0 220,40 220,260 0,260" class="cut"/>
+    <!-- Ventilation / acoustic grille slots -->
+    <rect x="130" y="120" width="8" height="60" rx="3" class="cut"/>
+    <rect x="150" y="120" width="8" height="60" rx="3" class="cut"/>
+    <rect x="170" y="120" width="8" height="60" rx="3" class="cut"/>
+    <text x="50" y="150" class="engrave" font-size="7" font-weight="bold">ACOUSTIC GRILLE</text>
+  </g>
+
+  <!-- PANEL 6: BASE CHASSIS (150 x 110 mm -> 300 x 220 px) -->
+  <g transform="translate(560, 370)">
+    <text x="0" y="-10" class="label">6. BASE BOTTOM CHASSIS (150 x 110 mm)</text>
+    <rect x="0" y="0" width="300" height="220" rx="4" class="cut"/>
+    
+    <!-- 4 Rubber Bumper Feet Holes: Dia 4.0mm -> r=4px, 15mm inset (30px) -->
+    <circle cx="30" cy="30" r="4" class="cut"/>
+    <circle cx="270" cy="30" r="4" class="cut"/>
+    <circle cx="30" cy="190" r="4" class="cut"/>
+    <circle cx="270" cy="190" r="4" class="cut"/>
+    
+    <!-- Pico Mounting Holes: 4x Dia 2.8mm (r=2.8px) for M2.5 standoffs -->
+    <!-- Pico footprint: 51mm x 21mm -> 102px x 42px. Positioned at X: 80, Y: 80 -->
+    <rect x="70" y="70" width="102" height="42" class="dim"/>
+    <circle cx="70" cy="70" r="2.8" class="cut"/>
+    <circle cx="172" cy="70" r="2.8" class="cut"/>
+    <circle cx="70" cy="112" r="2.8" class="cut"/>
+    <circle cx="172" cy="112" r="2.8" class="cut"/>
+    <text x="121" y="95" class="engrave" font-size="7" font-weight="bold" text-anchor="middle">PICO RP2040 CORE</text>
+
+    <!-- Star Ground Central Hub Stud: Dia 3.5mm -> r=3.5px at X: 220, Y: 90 -->
+    <circle cx="220" cy="91" r="3.5" class="cut"/>
+    <circle cx="220" cy="91" r="8" class="dim"/>
+    <text x="220" y="75" class="engrave" font-size="7" font-weight="bold" text-anchor="middle">STAR GND STUD</text>
+    <text x="220" y="115" class="engrave" font-size="6" text-anchor="middle">(Central Hub)</text>
+  </g>
+
+</svg>
