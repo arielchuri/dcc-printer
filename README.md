@@ -78,9 +78,9 @@ The project specifications and engineering guides are divided into modular docum
 
 ## 4. Device Art Capstone Submission (PSAM 2230)
 
-This project also serves as the final capstone for **PSAM 2230 Device Art** (Parsons School of Design). All academic deliverables, design milestones, visual research, mechanical drawings, laser-cut templates, and exhibition documentation are organized in the **[device-art-project](device-art-project/README.md)** directory:
+This project also serves as the final capstone for **PSAM 2230 Device Art** (Parsons School of Design). All academic deliverables, design milestones, visual research, mechanical drawings, laser-cut templates, and exhibition documentation are organized in the **[device-art-project](device-art.md)** directory:
 
-- **[Milestone 1: Proposal & Miro Board](device-art-project/01_proposal/milestone_01_proposal.md)**: Concept narrative, user interaction loop, artistic precedents, and BOM.
-- **[Milestone 2: Systems Architecture](device-art-project/02_systems/milestone_02_systems.md)**: State machine, pseudo-code, wiring schematic, and working CircuitPython firmware.
-- **[Milestone 3: Enclosure & CAD](device-art-project/03_enclosure/milestone_03_enclosure.md)**: Enclosure drawings, 2D laser-cut SVG, and 3D STEP models.
-- **[Final Exhibition Package](device-art-project/04_final_submission/final_capstone_submission.md)**: Learning Portfolio post, artist statement, video storyboard, and photography plan.
+- **[Milestone 1: Proposal & Miro Board](01_proposal/milestone_01_proposal.md)**: Concept narrative, user interaction loop, artistic precedents, and BOM.
+- **[Milestone 2: Systems Architecture](02_systems/milestone_02_systems.md)**: State machine, pseudo-code, wiring schematic, and working CircuitPython firmware.
+- **[Milestone 3: Enclosure & CAD](03_enclosure/milestone_03_enclosure.md)**: Enclosure drawings, 2D laser-cut SVG, and 3D STEP models.
+- **[Final Exhibition Package](04_final_submission/final_capstone_submission.md)**: Learning Portfolio post, artist statement, video storyboard, and photography plan.
