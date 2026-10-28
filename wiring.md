@@ -6,6 +6,9 @@ This document details the complete electrical wiring, pinout interconnects, powe
 
 ## 1. System Wiring Diagram
 
+> [!TIP]
+> A full vector graphical schematic is available in **[circuit_schematic.svg](02_systems/circuit_schematic.svg)** and documented in **[02_systems/circuit_schematic.md](02_systems/circuit_schematic.md)**.
+
 ```text
 +-------------------------------------------------------------------------------+
 |                         DCC PRINTER WIRING MAP                                |

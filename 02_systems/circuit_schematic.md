@@ -44,9 +44,14 @@ To isolate the digital logic plane from heavy motor and thermal discharge curren
 
 ---
 
-## 3. Circuit Schematic Diagram Link
+## 3. Circuit Schematic Diagram
 
-- For the full ASCII wiring map and comprehensive grounding physics analysis, see the parent document:  
+The master electrical schematic diagram below details all GPIO pin assignments, UART/I2C buses, star ground returns, and decoupling components:
+
+![DCC Printer Master Electrical Schematic](circuit_schematic.svg)
+
+- **Vector SVG Schematic:** [circuit_schematic.svg](circuit_schematic.svg)
+- For the full ASCII wiring map and comprehensive grounding physics analysis, see:  
   **[wiring.md](../wiring.md)**
 - For the ZS-042 DS3231 circuit schematic diagram, see:  
   **[ds3231_schematic.jpg](../ds3231_schematic.jpg)**

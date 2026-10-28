@@ -133,5 +133,6 @@ stateDiagram-v2
 
 - **Structured Firmware Pseudo-Code**: [pseudo_code.md](pseudo_code.md)
 - **Detailed Circuit Schematic & Star Ground Guide**: [circuit_schematic.md](circuit_schematic.md)
+- **Vector Electrical Schematic Diagram (SVG)**: [circuit_schematic.svg](circuit_schematic.svg)
 - **Production CircuitPython Firmware (`code.py`)**: [firmware/code.py](firmware/code.py)
 - **Parent Wiring Specification**: [../wiring.md](../wiring.md)
