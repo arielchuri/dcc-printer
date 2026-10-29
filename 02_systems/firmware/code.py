@@ -27,8 +27,8 @@ import pwmio
 # 1. HARDWARE PIN CONFIGURATION & INITIALIZATION
 # ------------------------------------------------------------------------------
 
-# UART1 for Cashino Thermal Printer (9600 Baud, 8N1)
-uart = busio.UART(board.GP4, board.GP5, baudrate=9600, timeout=0.1)
+# UART1 for Cashino Thermal Printer (19200 Baud, 8N1)
+uart = busio.UART(board.GP4, board.GP5, baudrate=19200, timeout=0.1)
 
 # Configure Printer: Reset & set heating parameters for maximum darkness at 5V
 uart.write(b"\x1b\x40")              # ESC @: Initialize/reset printer
@@ -398,8 +398,8 @@ while True:
                 uart.write(line_text.encode('ascii', 'ignore'))
                 print_index += 1
             else:
-                # Print completed! Feed 3 lines past tear bar
-                uart.write(b"\r\n\r\n\r\n")
+                # Print completed! Feed 4 lines past tear bar using ESC d
+                uart.write(b"\x1b\x64\x04")
                 state = STATE_COOLDOWN
                 cooldown_start = now
                 if lcd:
