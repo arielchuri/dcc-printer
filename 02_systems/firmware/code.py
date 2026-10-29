@@ -30,6 +30,12 @@ import pwmio
 # UART1 for Cashino Thermal Printer (9600 Baud, 8N1)
 uart = busio.UART(board.GP4, board.GP5, baudrate=9600, timeout=0.1)
 
+# Configure Printer: Reset & set heating parameters for maximum darkness at 5V
+uart.write(b"\x1b\x40")              # ESC @: Initialize/reset printer
+time.sleep(0.05)
+uart.write(b"\x1b\x37\x07\xc8\x02")    # ESC 7: Heating dots=64, heating time=200us, interval=20us
+uart.write(b"\x12\x23\x1f")          # DC2 #: Print density max (31)
+
 # I2C0 Bus for LCD 1602 (0x27) and DS3231 RTC (0x68)
 i2c = busio.I2C(board.GP1, board.GP0)
 
