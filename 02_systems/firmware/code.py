@@ -390,8 +390,8 @@ while True:
         strobe_on = (now % 0.125) > 0.062
         led_pwm.duty_cycle = 65535 if strobe_on else 0
 
-        # Stream lines to Cashino thermal printer with 8ms inter-line delay
-        if now - last_print_stream >= 0.008:
+        # Stream lines to Cashino thermal printer with 80ms pacing to prevent buffer overrun
+        if now - last_print_stream >= 0.080:
             last_print_stream = now
             if print_index < len(print_lines):
                 line_text = print_lines[print_index] + "\r\n"
