@@ -1,16 +1,47 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1150" width="1600" height="1150">
-<defs>
-
-  <style>
-    .title { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, sans-serif; font-weight: 800; font-size: 23px; fill: #0f172a; }
-    .subtitle { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; font-weight: 500; font-size: 13px; fill: #475569; }
-    .meta { font-family: "SF Mono", Menlo, Consolas, Monaco, monospace; font-size: 11px; fill: #475569; }
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   viewBox="0 0 1600 1150"
+   width="1600"
+   height="1150"
+   version="1.1"
+   id="svg267"
+   sodipodi:docname="circuit_schematic.svg"
+   inkscape:version="1.4.4 (dcaf3e7d, 2026-05-05)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview267"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="1.28"
+     inkscape:cx="930.46875"
+     inkscape:cy="416.79688"
+     inkscape:window-width="2409"
+     inkscape:window-height="1342"
+     inkscape:window-x="2216"
+     inkscape:window-y="70"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="svg267" />
+  <defs
+     id="defs1">
+    <style
+       id="style1">
+    .title { font-family: -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, Helvetica, sans-serif; font-weight: 800; font-size: 23px; fill: #0f172a; }
+    .subtitle { font-family: -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, sans-serif; font-weight: 500; font-size: 13px; fill: #475569; }
+    .meta { font-family: &quot;SF Mono&quot;, Menlo, Consolas, Monaco, monospace; font-size: 11px; fill: #475569; }
     
-    .box-title { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; font-weight: 700; font-size: 13.5px; fill: #0f172a; }
-    .box-sub { font-family: "SF Mono", Menlo, monospace; font-size: 10px; fill: #64748b; }
-    .pin-label { font-family: "SF Mono", Menlo, Consolas, monospace; font-size: 10.5px; fill: #1e293b; font-weight: 600; }
-    .pin-num { font-family: "SF Mono", Menlo, Consolas, monospace; font-size: 9.5px; fill: #64748b; }
-    .wire-label { font-family: "SF Mono", Menlo, Consolas, monospace; font-size: 10px; font-weight: 600; }
+    .box-title { font-family: -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, sans-serif; font-weight: 700; font-size: 13.5px; fill: #0f172a; }
+    .box-sub { font-family: &quot;SF Mono&quot;, Menlo, monospace; font-size: 10px; fill: #64748b; }
+    .pin-label { font-family: &quot;SF Mono&quot;, Menlo, Consolas, monospace; font-size: 10.5px; fill: #1e293b; font-weight: 600; }
+    .pin-num { font-family: &quot;SF Mono&quot;, Menlo, Consolas, monospace; font-size: 9.5px; fill: #64748b; }
+    .wire-label { font-family: &quot;SF Mono&quot;, Menlo, Consolas, monospace; font-size: 10px; font-weight: 600; }
     
     .pwr-wire { stroke: #dc2626; stroke-width: 2.5; fill: none; stroke-linecap: round; stroke-linejoin: round; }
     .pwr-3v3 { stroke: #ea580c; stroke-width: 2.2; fill: none; stroke-linecap: round; stroke-linejoin: round; }
@@ -27,511 +58,3205 @@
     .callout-box { fill: #f8fafc; stroke: #94a3b8; stroke-dasharray: 4,3; }
     .callout-title { font-family: -apple-system, BlinkMacSystemFont, sans-serif; font-weight: 700; font-size: 11px; fill: #0f172a; }
     .callout-text { font-family: -apple-system, BlinkMacSystemFont, sans-serif; font-size: 10px; fill: #334155; }
-    .note-text { font-family: "SF Mono", Menlo, monospace; font-size: 9.5px; fill: #047857; }
+    .note-text { font-family: &quot;SF Mono&quot;, Menlo, monospace; font-size: 9.5px; fill: #047857; }
   </style>
-
-
-  <pattern id="grid" width="20" height="20" patternUnits="userSpaceOnUse">
-    <circle cx="1" cy="1" r="1" fill="#e2e8f0" />
-  </pattern>
-  <filter id="shadow" x="-5%" y="-5%" width="110%" height="110%">
-    <feDropShadow dx="0" dy="3" stdDeviation="4" flood-color="#0f172a" flood-opacity="0.08"/>
-  </filter>
-  <filter id="chip-shadow" x="-6%" y="-3%" width="112%" height="108%">
-    <feDropShadow dx="0" dy="6" stdDeviation="8" flood-color="#0f172a" flood-opacity="0.12"/>
-  </filter>
-
-</defs>
-<rect width="1600" height="1150" fill="#fcfdfe" />
-<rect width="1600" height="1150" fill="url(#grid)" />
-<rect x="20" y="20" width="1560" height="1110" rx="10" fill="none" stroke="#cbd5e1" stroke-width="1.5" />
-<g transform="translate(45, 55)">
-  <text x="0" y="0" class="title">DCC THERMAL PRINTER — MASTER ELECTRICAL SCHEMATIC</text>
-  <text x="0" y="22" class="subtitle">Raspberry Pi Pico (RP2040) Subsystem Interconnect, Star Grounding Topology &amp; Dual-Rail Power Distribution</text>
-</g>
-<g transform="translate(1020, 42)">
-  <rect x="0" y="0" width="540" height="75" rx="6" fill="#ffffff" stroke="#cbd5e1" filter="url(#shadow)" />
-  <text x="12" y="16" class="wire-label" style="fill:#334155; font-size:9.5px;">SYSTEM BUS &amp; SIGNAL COLOR CODING</text>
-  <line x1="16" y1="32" x2="50" y2="32" class="pwr-wire" />
-  <text x="56" y="36" class="meta" style="font-size:10px;">+5V Raw/Switched Rail</text>
-  <line x1="200" y1="32" x2="234" y2="32" class="pwr-3v3" />
-  <text x="240" y="36" class="meta" style="font-size:10px;">+3.3V Clean Logic Rail</text>
-  <line x1="390" y1="32" x2="424" y2="32" class="gnd-star" />
-  <text x="430" y="36" class="meta" style="font-size:10px;">Star GND (20 AWG)</text>
-  <line x1="16" y1="52" x2="50" y2="52" class="uart-tx" />
-  <text x="56" y="56" class="meta" style="font-size:10px;">UART1 TX (GP4)</text>
-  <line x1="200" y1="52" x2="234" y2="52" class="uart-rx" />
-  <text x="240" y="56" class="meta" style="font-size:10px;">UART1 RX (GP5)</text>
-  <line x1="390" y1="52" x2="424" y2="52" class="i2c-sda" />
-  <text x="430" y="56" class="meta" style="font-size:10px;">I2C0 SDA / SCL</text>
-</g>
-<g transform="translate(45, 135)" filter="url(#shadow)">
-  <rect x="0" y="0" width="290" height="225" rx="6" fill="#ffffff" stroke="#64748b" stroke-width="1.2" />
-  <rect x="0" y="0" width="290" height="28" rx="6" fill="#e2e8f0" />
-  <rect x="0" y="20" width="290" height="8" fill="#e2e8f0" />
-  <line x1="0" y1="28" x2="290" y2="28" stroke="#64748b" stroke-width="1" />
-  <text x="10" y="19" class="box-title">POWER SUBSYSTEM</text>
-  <text x="280" y="18" text-anchor="end" class="box-sub">5V 3A DC INPUT</text>
-</g>
-<rect x="65" y="180" width="105" height="60" rx="4" fill="#f8fafc" stroke="#94a3b8" />
-<text x="75" y="200" class="pin-label" style="font-size:10px;">DC BARREL JACK</text>
-<text x="75" y="214" class="meta" style="font-size:9px;">5.5 x 2.1mm (3A)</text>
-<circle cx="150" cy="205" r="3" fill="#dc2626" />
-<text x="135" y="200" class="pin-num" style="fill:#dc2626;">+5V</text>
-<circle cx="150" cy="225" r="3" fill="#0f172a" />
-<text x="135" y="234" class="pin-num">GND</text>
-<rect x="210" y="180" width="105" height="60" rx="4" fill="#f8fafc" stroke="#94a3b8" />
-<text x="218" y="200" class="pin-label" style="font-size:10px;">SPST SWITCH</text>
-<text x="218" y="214" class="meta" style="font-size:9px;">Adafruit #3221</text>
-<circle cx="230" cy="225" r="2.5" fill="#dc2626" />
-<line x1="230" y1="225" x2="255" y2="216" stroke="#dc2626" stroke-width="2" />
-<circle cx="260" cy="225" r="2.5" fill="#dc2626" />
-<line x1="150" y1="205" x2="185" y2="205" class="pwr-wire" />
-<line x1="185" y1="205" x2="185" y2="225" class="pwr-wire" />
-<line x1="185" y1="225" x2="230" y2="225" class="pwr-wire" />
-<rect x="65" y="260" width="250" height="85" rx="5" class="callout-box" fill="#f1f5f9" stroke="#0f172a" stroke-width="1.8" />
-<text x="75" y="278" class="callout-title" style="fill:#0f172a;">★ CENTRAL STAR GROUND HUB</text>
-<text x="75" y="293" class="callout-text">Low-impedance single-point star ground at DC input jack.</text>
-<text x="75" y="306" class="callout-text">Eliminates 2.2A printer pulse ground bounce from digital logic.</text>
-<circle cx="200" cy="325" r="6" class="star-dot" />
-<text x="210" y="329" class="wire-label" style="fill:#0f172a; font-size:10px;">STAR GND POINT</text>
-<line x1="150" y1="225" x2="175" y2="225" class="gnd-star" />
-<line x1="175" y1="225" x2="175" y2="325" class="gnd-star" />
-<line x1="175" y1="325" x2="200" y2="325" class="gnd-star" />
-<g transform="translate(45, 380)" filter="url(#shadow)">
-  <rect x="0" y="0" width="290" height="320" rx="6" fill="#ffffff" stroke="#f59e0b" stroke-width="1.2" />
-  <rect x="0" y="0" width="290" height="28" rx="6" fill="#fef3c7" />
-  <rect x="0" y="20" width="290" height="8" fill="#fef3c7" />
-  <line x1="0" y1="28" x2="290" y2="28" stroke="#f59e0b" stroke-width="1" />
-  <text x="10" y="19" class="box-title">ROTARY SWITCH (SP8T)</text>
-  <text x="280" y="18" text-anchor="end" class="box-sub">ALFA / ADAFRUIT #2925</text>
-</g>
-<text x="60" y="426" class="callout-text" style="font-weight:600; fill:#92400e;">1-Pole 8-Position Switch (Active LOW, Internal Pull-Ups)</text>
-<rect x="60" y="439" width="260" height="20" rx="3" fill="#fffbeb" stroke="#fde68a" />
-<text x="70" y="453" class="pin-label" style="font-size:10px;">Pos 1: DCC Funnel</text>
-<text x="265" y="453" class="pin-num" style="fill:#b45309; font-weight:700;">GP6</text>
-<circle cx="320" cy="451" r="3" fill="#d97706" />
-<rect x="60" y="465" width="260" height="20" rx="3" fill="#fffbeb" stroke="#fde68a" />
-<text x="70" y="479" class="pin-label" style="font-size:10px;">Pos 2: MCC Seeker</text>
-<text x="265" y="479" class="pin-num" style="fill:#b45309; font-weight:700;">GP7</text>
-<circle cx="320" cy="477" r="3" fill="#d97706" />
-<rect x="60" y="491" width="260" height="20" rx="3" fill="#fffbeb" stroke="#fde68a" />
-<text x="70" y="505" class="pin-label" style="font-size:10px;">Pos 3: Umerica Surv.</text>
-<text x="265" y="505" class="pin-num" style="fill:#b45309; font-weight:700;">GP8</text>
-<circle cx="320" cy="503" r="3" fill="#d97706" />
-<rect x="60" y="517" width="260" height="20" rx="3" fill="#fffbeb" stroke="#fde68a" />
-<text x="70" y="531" class="pin-label" style="font-size:10px;">Pos 4: X-Crawl Athl.</text>
-<text x="265" y="531" class="pin-num" style="fill:#b45309; font-weight:700;">GP9</text>
-<circle cx="320" cy="529" r="3" fill="#d97706" />
-<rect x="60" y="543" width="260" height="20" rx="3" fill="#fffbeb" stroke="#fde68a" />
-<text x="70" y="557" class="pin-label" style="font-size:10px;">Pos 5: Lankhmar Cit.</text>
-<text x="265" y="557" class="pin-num" style="fill:#b45309; font-weight:700;">GP10</text>
-<circle cx="320" cy="555" r="3" fill="#d97706" />
-<rect x="60" y="569" width="260" height="20" rx="3" fill="#fffbeb" stroke="#fde68a" />
-<text x="70" y="583" class="pin-label" style="font-size:10px;">Pos 6: Empire East</text>
-<text x="265" y="583" class="pin-num" style="fill:#b45309; font-weight:700;">GP11</text>
-<circle cx="320" cy="581" r="3" fill="#d97706" />
-<rect x="60" y="595" width="260" height="20" rx="3" fill="#fffbeb" stroke="#fde68a" />
-<text x="70" y="609" class="pin-label" style="font-size:10px;">Pos 7: Dying Earth</text>
-<text x="265" y="609" class="pin-num" style="fill:#b45309; font-weight:700;">GP12</text>
-<circle cx="320" cy="607" r="3" fill="#d97706" />
-<rect x="60" y="621" width="260" height="20" rx="3" fill="#fffbeb" stroke="#fde68a" />
-<text x="70" y="635" class="pin-label" style="font-size:10px;">Pos 8: Beast-o-Matic</text>
-<text x="265" y="635" class="pin-num" style="fill:#b45309; font-weight:700;">GP13</text>
-<circle cx="320" cy="633" r="3" fill="#d97706" />
-<rect x="60" y="664" width="260" height="24" rx="3" fill="#f1f5f9" stroke="#cbd5e1" />
-<circle cx="75" cy="676" r="3" fill="#475569" />
-<text x="87" y="680" class="pin-label" style="font-size:10.5px;">COMMON (WIPER) PIN</text>
-<text x="310" y="680" text-anchor="end" class="pin-num">LOGIC GND</text>
-<g transform="translate(45, 720)" filter="url(#shadow)">
-  <rect x="0" y="0" width="290" height="190" rx="6" fill="#ffffff" stroke="#8b5cf6" stroke-width="1.2" />
-  <rect x="0" y="0" width="290" height="28" rx="6" fill="#ede9fe" />
-  <rect x="0" y="20" width="290" height="8" fill="#ede9fe" />
-  <line x1="0" y1="28" x2="290" y2="28" stroke="#8b5cf6" stroke-width="1" />
-  <text x="10" y="19" class="box-title">ILLUMINATED TRIANGLE BUTTON</text>
-  <text x="280" y="18" text-anchor="end" class="box-sub">ADAFRUIT #4190 (M24)</text>
-</g>
-<rect x="60" y="760" width="260" height="58" rx="4" fill="#ffffff" stroke="#ddd6fe" />
-<text x="70" y="778" class="box-title" style="font-size:11.5px; fill:#6d28d9;">MOMENTARY MICROSWITCH</text>
-<text x="70" y="795" class="pin-label">NO (Normally Open)</text>
-<text x="260" y="795" class="pin-num" style="fill:#6d28d9; font-weight:700;">GP14</text>
-<circle cx="320" cy="791" r="3" fill="#6d28d9" />
-<text x="70" y="810" class="pin-label">COM Contact</text>
-<text x="260" y="810" class="pin-num">GND</text>
-<circle cx="320" cy="806" r="3" fill="#475569" />
-<rect x="60" y="830" width="260" height="66" rx="4" fill="#ffffff" stroke="#ddd6fe" />
-<text x="70" y="848" class="box-title" style="font-size:11.5px; fill:#6d28d9;">INTEGRATED GLOW LED (PWM)</text>
-<text x="70" y="865" class="pin-label">Anode (+) via 220Ω</text>
-<text x="260" y="865" class="pin-num" style="fill:#7c3aed; font-weight:700;">GP15</text>
-<circle cx="320" cy="861" r="3" fill="#7c3aed" />
-<text x="70" y="883" class="pin-label">Cathode (-) Ground</text>
-<text x="260" y="883" class="pin-num">GND</text>
-<circle cx="320" cy="879" r="3" fill="#475569" />
-<g transform="translate(480, 150)" filter="url(#chip-shadow)">
-  <rect x="0" y="0" width="440" height="920" rx="14" fill="#064e3b" stroke="#047857" stroke-width="2.5" />
-  <rect x="10" y="10" width="420" height="900" rx="10" fill="#065f46" />
-  <rect x="175.0" y="-10" width="90" height="30" rx="3" fill="#94a3b8" stroke="#475569" />
-  <text x="220.0" y="10" text-anchor="middle" class="meta" style="fill:#1e293b; font-size:9px; font-weight:700;">MICRO-USB</text>
-  <rect x="170.0" y="240" width="100" height="100" rx="4" fill="#0f172a" stroke="#334155" />
-  <circle cx="185.0" cy="255" r="3" fill="#64748b" />
-  <text x="220.0" y="285" text-anchor="middle" class="pin-label" style="fill:#f8fafc; font-size:12px; font-weight:800;">RP2040</text>
-  <text x="220.0" y="302" text-anchor="middle" class="meta" style="fill:#94a3b8; font-size:9px;">DUAL CORTEX-M0+</text>
-  <text x="220.0" y="318" text-anchor="middle" class="meta" style="fill:#34d399; font-size:9px;">CIRCUITPYTHON 9.X</text>
-  <rect x="208.0" y="75" width="24" height="14" rx="2" fill="#22c55e" stroke="#16a34a" />
-  <text x="220.0" y="104" text-anchor="middle" class="meta" style="fill:#a7f3d0; font-size:8px;">GP25 LED</text>
-  <text x="220.0" y="170" text-anchor="middle" class="title" style="fill:#f8fafc; font-size:18px; letter-spacing:1px;">RASPBERRY PI PICO</text>
-  <text x="220.0" y="190" text-anchor="middle" class="subtitle" style="fill:#a7f3d0; font-size:11px;">PRIMARY SYSTEM CONTROLLER</text>
-</g>
-<circle cx="496" cy="260" r="5" fill="#fef08a" stroke="#ca8a04" stroke-width="1.5" />
-<circle cx="496" cy="260" r="2" fill="#0f172a" />
-<text x="508" y="263.5" class="pin-num" style="fill:#e2e8f0; font-weight:700;">1</text>
-<text x="530" y="264" class="pin-label" style="fill:#f8fafc; font-size:11px;">GP0</text>
-<text x="575" y="263.5" class="meta" style="fill:#059669; font-size:9px;">I2C0 SDA (LCD/RTC)</text>
-<circle cx="496" cy="298" r="5" fill="#fef08a" stroke="#ca8a04" stroke-width="1.5" />
-<circle cx="496" cy="298" r="2" fill="#0f172a" />
-<text x="508" y="301.5" class="pin-num" style="fill:#e2e8f0; font-weight:700;">2</text>
-<text x="530" y="302" class="pin-label" style="fill:#f8fafc; font-size:11px;">GP1</text>
-<text x="575" y="301.5" class="meta" style="fill:#10b981; font-size:9px;">I2C0 SCL (LCD/RTC)</text>
-<circle cx="496" cy="336" r="5" fill="#fef08a" stroke="#ca8a04" stroke-width="1.5" />
-<circle cx="496" cy="336" r="2" fill="#0f172a" />
-<text x="508" y="339.5" class="pin-num" style="fill:#e2e8f0; font-weight:700;">3</text>
-<text x="530" y="340" class="pin-label" style="fill:#f8fafc; font-size:11px;">GND</text>
-<text x="575" y="339.5" class="meta" style="fill:#94a3b8; font-size:9px;">GND</text>
-<circle cx="496" cy="374" r="5" fill="#fef08a" stroke="#ca8a04" stroke-width="1.5" />
-<circle cx="496" cy="374" r="2" fill="#0f172a" />
-<text x="508" y="377.5" class="pin-num" style="fill:#e2e8f0; font-weight:700;">4</text>
-<text x="530" y="378" class="pin-label" style="fill:#f8fafc; font-size:11px;">GP2</text>
-<circle cx="496" cy="412" r="5" fill="#fef08a" stroke="#ca8a04" stroke-width="1.5" />
-<circle cx="496" cy="412" r="2" fill="#0f172a" />
-<text x="508" y="415.5" class="pin-num" style="fill:#e2e8f0; font-weight:700;">5</text>
-<text x="530" y="416" class="pin-label" style="fill:#f8fafc; font-size:11px;">GP3</text>
-<circle cx="496" cy="450" r="5" fill="#fef08a" stroke="#ca8a04" stroke-width="1.5" />
-<circle cx="496" cy="450" r="2" fill="#0f172a" />
-<text x="508" y="453.5" class="pin-num" style="fill:#e2e8f0; font-weight:700;">6</text>
-<text x="530" y="454" class="pin-label" style="fill:#f8fafc; font-size:11px;">GP4</text>
-<text x="575" y="453.5" class="meta" style="fill:#2563eb; font-size:9px;">UART1 TX -&gt; Printer</text>
-<circle cx="496" cy="488" r="5" fill="#fef08a" stroke="#ca8a04" stroke-width="1.5" />
-<circle cx="496" cy="488" r="2" fill="#0f172a" />
-<text x="508" y="491.5" class="pin-num" style="fill:#e2e8f0; font-weight:700;">7</text>
-<text x="530" y="492" class="pin-label" style="fill:#f8fafc; font-size:11px;">GP5</text>
-<text x="575" y="491.5" class="meta" style="fill:#0284c7; font-size:9px;">UART1 RX &lt;- Printer</text>
-<circle cx="496" cy="526" r="5" fill="#fef08a" stroke="#ca8a04" stroke-width="1.5" />
-<circle cx="496" cy="526" r="2" fill="#0f172a" />
-<text x="508" y="529.5" class="pin-num" style="fill:#e2e8f0; font-weight:700;">8</text>
-<text x="530" y="530" class="pin-label" style="fill:#f8fafc; font-size:11px;">GND</text>
-<text x="575" y="529.5" class="meta" style="fill:#94a3b8; font-size:9px;">GND</text>
-<circle cx="496" cy="564" r="5" fill="#fef08a" stroke="#ca8a04" stroke-width="1.5" />
-<circle cx="496" cy="564" r="2" fill="#0f172a" />
-<text x="508" y="567.5" class="pin-num" style="fill:#e2e8f0; font-weight:700;">9</text>
-<text x="530" y="568" class="pin-label" style="fill:#f8fafc; font-size:11px;">GP6</text>
-<text x="575" y="567.5" class="meta" style="fill:#d97706; font-size:9px;">Rotary 1 (DCC)</text>
-<circle cx="496" cy="602" r="5" fill="#fef08a" stroke="#ca8a04" stroke-width="1.5" />
-<circle cx="496" cy="602" r="2" fill="#0f172a" />
-<text x="508" y="605.5" class="pin-num" style="fill:#e2e8f0; font-weight:700;">10</text>
-<text x="530" y="606" class="pin-label" style="fill:#f8fafc; font-size:11px;">GP7</text>
-<text x="575" y="605.5" class="meta" style="fill:#d97706; font-size:9px;">Rotary 2 (MCC)</text>
-<circle cx="496" cy="640" r="5" fill="#fef08a" stroke="#ca8a04" stroke-width="1.5" />
-<circle cx="496" cy="640" r="2" fill="#0f172a" />
-<text x="508" y="643.5" class="pin-num" style="fill:#e2e8f0; font-weight:700;">11</text>
-<text x="530" y="644" class="pin-label" style="fill:#f8fafc; font-size:11px;">GP8</text>
-<text x="575" y="643.5" class="meta" style="fill:#d97706; font-size:9px;">Rotary 3 (Umerica)</text>
-<circle cx="496" cy="678" r="5" fill="#fef08a" stroke="#ca8a04" stroke-width="1.5" />
-<circle cx="496" cy="678" r="2" fill="#0f172a" />
-<text x="508" y="681.5" class="pin-num" style="fill:#e2e8f0; font-weight:700;">12</text>
-<text x="530" y="682" class="pin-label" style="fill:#f8fafc; font-size:11px;">GP9</text>
-<text x="575" y="681.5" class="meta" style="fill:#d97706; font-size:9px;">Rotary 4 (X-Crawl)</text>
-<circle cx="496" cy="716" r="5" fill="#fef08a" stroke="#ca8a04" stroke-width="1.5" />
-<circle cx="496" cy="716" r="2" fill="#0f172a" />
-<text x="508" y="719.5" class="pin-num" style="fill:#e2e8f0; font-weight:700;">13</text>
-<text x="530" y="720" class="pin-label" style="fill:#f8fafc; font-size:11px;">GND</text>
-<text x="575" y="719.5" class="meta" style="fill:#94a3b8; font-size:9px;">GND</text>
-<circle cx="496" cy="754" r="5" fill="#fef08a" stroke="#ca8a04" stroke-width="1.5" />
-<circle cx="496" cy="754" r="2" fill="#0f172a" />
-<text x="508" y="757.5" class="pin-num" style="fill:#e2e8f0; font-weight:700;">14</text>
-<text x="530" y="758" class="pin-label" style="fill:#f8fafc; font-size:11px;">GP10</text>
-<text x="575" y="757.5" class="meta" style="fill:#d97706; font-size:9px;">Rotary 5 (Lankhmar)</text>
-<circle cx="496" cy="792" r="5" fill="#fef08a" stroke="#ca8a04" stroke-width="1.5" />
-<circle cx="496" cy="792" r="2" fill="#0f172a" />
-<text x="508" y="795.5" class="pin-num" style="fill:#e2e8f0; font-weight:700;">15</text>
-<text x="530" y="796" class="pin-label" style="fill:#f8fafc; font-size:11px;">GP11</text>
-<text x="575" y="795.5" class="meta" style="fill:#d97706; font-size:9px;">Rotary 6 (Empire East)</text>
-<circle cx="496" cy="830" r="5" fill="#fef08a" stroke="#ca8a04" stroke-width="1.5" />
-<circle cx="496" cy="830" r="2" fill="#0f172a" />
-<text x="508" y="833.5" class="pin-num" style="fill:#e2e8f0; font-weight:700;">16</text>
-<text x="530" y="834" class="pin-label" style="fill:#f8fafc; font-size:11px;">GP12</text>
-<text x="575" y="833.5" class="meta" style="fill:#d97706; font-size:9px;">Rotary 7 (Dying Earth)</text>
-<circle cx="496" cy="868" r="5" fill="#fef08a" stroke="#ca8a04" stroke-width="1.5" />
-<circle cx="496" cy="868" r="2" fill="#0f172a" />
-<text x="508" y="871.5" class="pin-num" style="fill:#e2e8f0; font-weight:700;">17</text>
-<text x="530" y="872" class="pin-label" style="fill:#f8fafc; font-size:11px;">GP13</text>
-<text x="575" y="871.5" class="meta" style="fill:#d97706; font-size:9px;">Rotary 8 (Beast-o-Matic)</text>
-<circle cx="496" cy="906" r="5" fill="#fef08a" stroke="#ca8a04" stroke-width="1.5" />
-<circle cx="496" cy="906" r="2" fill="#0f172a" />
-<text x="508" y="909.5" class="pin-num" style="fill:#e2e8f0; font-weight:700;">18</text>
-<text x="530" y="910" class="pin-label" style="fill:#f8fafc; font-size:11px;">GND</text>
-<text x="575" y="909.5" class="meta" style="fill:#94a3b8; font-size:9px;">GND</text>
-<circle cx="496" cy="944" r="5" fill="#fef08a" stroke="#ca8a04" stroke-width="1.5" />
-<circle cx="496" cy="944" r="2" fill="#0f172a" />
-<text x="508" y="947.5" class="pin-num" style="fill:#e2e8f0; font-weight:700;">19</text>
-<text x="530" y="948" class="pin-label" style="fill:#f8fafc; font-size:11px;">GP14</text>
-<text x="575" y="947.5" class="meta" style="fill:#7c3aed; font-size:9px;">Button In (Active LOW)</text>
-<circle cx="496" cy="982" r="5" fill="#fef08a" stroke="#ca8a04" stroke-width="1.5" />
-<circle cx="496" cy="982" r="2" fill="#0f172a" />
-<text x="508" y="985.5" class="pin-num" style="fill:#e2e8f0; font-weight:700;">20</text>
-<text x="530" y="986" class="pin-label" style="fill:#f8fafc; font-size:11px;">GP15</text>
-<text x="575" y="985.5" class="meta" style="fill:#a855f7; font-size:9px;">PWM Out (Button LED)</text>
-<circle cx="904" cy="260" r="5" fill="#fef08a" stroke="#ca8a04" stroke-width="1.5" />
-<circle cx="904" cy="260" r="2" fill="#0f172a" />
-<text x="892" y="263.5" text-anchor="end" class="pin-num" style="fill:#e2e8f0; font-weight:700;">40</text>
-<text x="870" y="264" text-anchor="end" class="pin-label" style="fill:#f8fafc; font-size:11px;">VBUS</text>
-<text x="815" y="263.5" text-anchor="end" class="meta" style="fill:#dc2626; font-size:9.5px; font-weight:700;">5V USB In (Unconnected)</text>
-<circle cx="904" cy="298" r="5" fill="#fef08a" stroke="#ca8a04" stroke-width="1.5" />
-<circle cx="904" cy="298" r="2" fill="#0f172a" />
-<text x="892" y="301.5" text-anchor="end" class="pin-num" style="fill:#e2e8f0; font-weight:700;">39</text>
-<text x="870" y="302" text-anchor="end" class="pin-label" style="fill:#f8fafc; font-size:11px;">VSYS</text>
-<text x="815" y="301.5" text-anchor="end" class="meta" style="fill:#dc2626; font-size:9.5px; font-weight:700;">Switched +5V Main Rail</text>
-<circle cx="904" cy="336" r="5" fill="#fef08a" stroke="#ca8a04" stroke-width="1.5" />
-<circle cx="904" cy="336" r="2" fill="#0f172a" />
-<text x="892" y="339.5" text-anchor="end" class="pin-num" style="fill:#e2e8f0; font-weight:700;">38</text>
-<text x="870" y="340" text-anchor="end" class="pin-label" style="fill:#f8fafc; font-size:11px;">GND</text>
-<text x="815" y="339.5" text-anchor="end" class="meta" style="fill:#38bdf8; font-size:9.5px; font-weight:700;">Pico Ground to Star Hub</text>
-<circle cx="904" cy="374" r="5" fill="#fef08a" stroke="#ca8a04" stroke-width="1.5" />
-<circle cx="904" cy="374" r="2" fill="#0f172a" />
-<text x="892" y="377.5" text-anchor="end" class="pin-num" style="fill:#e2e8f0; font-weight:700;">37</text>
-<text x="870" y="378" text-anchor="end" class="pin-label" style="fill:#f8fafc; font-size:11px;">3V3_EN</text>
-<circle cx="904" cy="412" r="5" fill="#fef08a" stroke="#ca8a04" stroke-width="1.5" />
-<circle cx="904" cy="412" r="2" fill="#0f172a" />
-<text x="892" y="415.5" text-anchor="end" class="pin-num" style="fill:#e2e8f0; font-weight:700;">36</text>
-<text x="870" y="416" text-anchor="end" class="pin-label" style="fill:#f8fafc; font-size:11px;">3V3_OUT</text>
-<text x="815" y="415.5" text-anchor="end" class="meta" style="fill:#ea580c; font-size:9.5px; font-weight:700;">+3.3V Regulated Output</text>
-<circle cx="904" cy="450" r="5" fill="#fef08a" stroke="#ca8a04" stroke-width="1.5" />
-<circle cx="904" cy="450" r="2" fill="#0f172a" />
-<text x="892" y="453.5" text-anchor="end" class="pin-num" style="fill:#e2e8f0; font-weight:700;">35</text>
-<text x="870" y="454" text-anchor="end" class="pin-label" style="fill:#f8fafc; font-size:11px;">ADC_VREF</text>
-<circle cx="904" cy="488" r="5" fill="#fef08a" stroke="#ca8a04" stroke-width="1.5" />
-<circle cx="904" cy="488" r="2" fill="#0f172a" />
-<text x="892" y="491.5" text-anchor="end" class="pin-num" style="fill:#e2e8f0; font-weight:700;">34</text>
-<text x="870" y="492" text-anchor="end" class="pin-label" style="fill:#f8fafc; font-size:11px;">GP28</text>
-<circle cx="904" cy="526" r="5" fill="#fef08a" stroke="#ca8a04" stroke-width="1.5" />
-<circle cx="904" cy="526" r="2" fill="#0f172a" />
-<text x="892" y="529.5" text-anchor="end" class="pin-num" style="fill:#e2e8f0; font-weight:700;">33</text>
-<text x="870" y="530" text-anchor="end" class="pin-label" style="fill:#f8fafc; font-size:11px;">GND</text>
-<circle cx="904" cy="564" r="5" fill="#fef08a" stroke="#ca8a04" stroke-width="1.5" />
-<circle cx="904" cy="564" r="2" fill="#0f172a" />
-<text x="892" y="567.5" text-anchor="end" class="pin-num" style="fill:#e2e8f0; font-weight:700;">32</text>
-<text x="870" y="568" text-anchor="end" class="pin-label" style="fill:#f8fafc; font-size:11px;">GP27</text>
-<circle cx="904" cy="602" r="5" fill="#fef08a" stroke="#ca8a04" stroke-width="1.5" />
-<circle cx="904" cy="602" r="2" fill="#0f172a" />
-<text x="892" y="605.5" text-anchor="end" class="pin-num" style="fill:#e2e8f0; font-weight:700;">31</text>
-<text x="870" y="606" text-anchor="end" class="pin-label" style="fill:#f8fafc; font-size:11px;">GP26</text>
-<circle cx="904" cy="640" r="5" fill="#fef08a" stroke="#ca8a04" stroke-width="1.5" />
-<circle cx="904" cy="640" r="2" fill="#0f172a" />
-<text x="892" y="643.5" text-anchor="end" class="pin-num" style="fill:#e2e8f0; font-weight:700;">30</text>
-<text x="870" y="644" text-anchor="end" class="pin-label" style="fill:#f8fafc; font-size:11px;">RUN</text>
-<circle cx="904" cy="678" r="5" fill="#fef08a" stroke="#ca8a04" stroke-width="1.5" />
-<circle cx="904" cy="678" r="2" fill="#0f172a" />
-<text x="892" y="681.5" text-anchor="end" class="pin-num" style="fill:#e2e8f0; font-weight:700;">29</text>
-<text x="870" y="682" text-anchor="end" class="pin-label" style="fill:#f8fafc; font-size:11px;">GP22</text>
-<circle cx="904" cy="716" r="5" fill="#fef08a" stroke="#ca8a04" stroke-width="1.5" />
-<circle cx="904" cy="716" r="2" fill="#0f172a" />
-<text x="892" y="719.5" text-anchor="end" class="pin-num" style="fill:#e2e8f0; font-weight:700;">28</text>
-<text x="870" y="720" text-anchor="end" class="pin-label" style="fill:#f8fafc; font-size:11px;">GND</text>
-<circle cx="904" cy="754" r="5" fill="#fef08a" stroke="#ca8a04" stroke-width="1.5" />
-<circle cx="904" cy="754" r="2" fill="#0f172a" />
-<text x="892" y="757.5" text-anchor="end" class="pin-num" style="fill:#e2e8f0; font-weight:700;">27</text>
-<text x="870" y="758" text-anchor="end" class="pin-label" style="fill:#f8fafc; font-size:11px;">GP21</text>
-<circle cx="904" cy="792" r="5" fill="#fef08a" stroke="#ca8a04" stroke-width="1.5" />
-<circle cx="904" cy="792" r="2" fill="#0f172a" />
-<text x="892" y="795.5" text-anchor="end" class="pin-num" style="fill:#e2e8f0; font-weight:700;">26</text>
-<text x="870" y="796" text-anchor="end" class="pin-label" style="fill:#f8fafc; font-size:11px;">GP20</text>
-<circle cx="904" cy="830" r="5" fill="#fef08a" stroke="#ca8a04" stroke-width="1.5" />
-<circle cx="904" cy="830" r="2" fill="#0f172a" />
-<text x="892" y="833.5" text-anchor="end" class="pin-num" style="fill:#e2e8f0; font-weight:700;">25</text>
-<text x="870" y="834" text-anchor="end" class="pin-label" style="fill:#f8fafc; font-size:11px;">GP19</text>
-<circle cx="904" cy="868" r="5" fill="#fef08a" stroke="#ca8a04" stroke-width="1.5" />
-<circle cx="904" cy="868" r="2" fill="#0f172a" />
-<text x="892" y="871.5" text-anchor="end" class="pin-num" style="fill:#e2e8f0; font-weight:700;">24</text>
-<text x="870" y="872" text-anchor="end" class="pin-label" style="fill:#f8fafc; font-size:11px;">GP18</text>
-<circle cx="904" cy="906" r="5" fill="#fef08a" stroke="#ca8a04" stroke-width="1.5" />
-<circle cx="904" cy="906" r="2" fill="#0f172a" />
-<text x="892" y="909.5" text-anchor="end" class="pin-num" style="fill:#e2e8f0; font-weight:700;">23</text>
-<text x="870" y="910" text-anchor="end" class="pin-label" style="fill:#f8fafc; font-size:11px;">GND</text>
-<circle cx="904" cy="944" r="5" fill="#fef08a" stroke="#ca8a04" stroke-width="1.5" />
-<circle cx="904" cy="944" r="2" fill="#0f172a" />
-<text x="892" y="947.5" text-anchor="end" class="pin-num" style="fill:#e2e8f0; font-weight:700;">22</text>
-<text x="870" y="948" text-anchor="end" class="pin-label" style="fill:#f8fafc; font-size:11px;">GP17</text>
-<circle cx="904" cy="982" r="5" fill="#fef08a" stroke="#ca8a04" stroke-width="1.5" />
-<circle cx="904" cy="982" r="2" fill="#0f172a" />
-<text x="892" y="985.5" text-anchor="end" class="pin-num" style="fill:#e2e8f0; font-weight:700;">21</text>
-<text x="870" y="986" text-anchor="end" class="pin-label" style="fill:#f8fafc; font-size:11px;">GP16</text>
-<g transform="translate(1060, 135)" filter="url(#shadow)">
-  <rect x="0" y="0" width="490" height="260" rx="6" fill="#ffffff" stroke="#ef4444" stroke-width="1.2" />
-  <rect x="0" y="0" width="490" height="28" rx="6" fill="#fee2e2" />
-  <rect x="0" y="20" width="490" height="8" fill="#fee2e2" />
-  <line x1="0" y1="28" x2="490" y2="28" stroke="#ef4444" stroke-width="1" />
-  <text x="10" y="19" class="box-title">CASHINO CSN-A2 THERMAL PRINTER</text>
-  <text x="480" y="18" text-anchor="end" class="box-sub">58mm PANEL PRINTER</text>
-</g>
-<text x="1076" y="181" class="callout-text" style="font-weight:700; fill:#991b1b;">High-Current Inductive / Thermal Load Subsystem</text>
-<text x="1076" y="195" class="callout-text">Print Head Peak: 1.8A–2.2A @ 5V DC • Stepper Motor Feed</text>
-<rect x="1075" y="211" width="280" height="24" rx="4" fill="#fff1f2" stroke="#fecdd3" />
-<circle cx="1085" cy="223" r="3.5" fill="#dc2626" />
-<text x="1096" y="227" class="pin-label" style="font-size:11px;">VCC (5V-9V)</text>
-<text x="1345" y="227" text-anchor="end" class="meta" style="fill:#64748b; font-size:9px;">High-Current +5V Input</text>
-<rect x="1075" y="243" width="280" height="24" rx="4" fill="#fff1f2" stroke="#fecdd3" />
-<circle cx="1085" cy="255" r="3.5" fill="#0f172a" />
-<text x="1096" y="259" class="pin-label" style="font-size:11px;">GND (Power)</text>
-<text x="1345" y="259" text-anchor="end" class="meta" style="fill:#64748b; font-size:9px;">Direct Heavy Return to Star Ground</text>
-<rect x="1075" y="277" width="280" height="24" rx="4" fill="#fff1f2" stroke="#fecdd3" />
-<circle cx="1085" cy="289" r="3.5" fill="#2563eb" />
-<text x="1096" y="293" class="pin-label" style="font-size:11px;">RX (Data In)</text>
-<text x="1345" y="293" text-anchor="end" class="meta" style="fill:#64748b; font-size:9px;">TTL Serial Receive (9600 Baud)</text>
-<rect x="1075" y="311" width="280" height="24" rx="4" fill="#fff1f2" stroke="#fecdd3" />
-<circle cx="1085" cy="323" r="3.5" fill="#0284c7" />
-<text x="1096" y="327" class="pin-label" style="font-size:11px;">TX (Status)</text>
-<text x="1345" y="327" text-anchor="end" class="meta" style="fill:#64748b; font-size:9px;">TTL Serial Transmit / Paper Sensor</text>
-<rect x="1075" y="343" width="280" height="24" rx="4" fill="#fff1f2" stroke="#fecdd3" />
-<circle cx="1085" cy="355" r="3.5" fill="#475569" />
-<text x="1096" y="359" class="pin-label" style="font-size:11px;">GND (Logic)</text>
-<text x="1345" y="359" text-anchor="end" class="meta" style="fill:#64748b; font-size:9px;">Tied Internally to Power Ground</text>
-<g transform="translate(1385, 215)">
-  <rect x="0" y="0" width="145" height="150" rx="6" fill="#f8fafc" stroke="#0284c7" stroke-width="1.5" />
-  <text x="72" y="22" text-anchor="middle" class="callout-title" style="fill:#0369a1;">BUFFER CAPACITOR</text>
-  <text x="72" y="38" text-anchor="middle" class="meta" style="fill:#0284c7; font-weight:700;">1000 µF / 16V</text>
-  <text x="72" y="52" text-anchor="middle" class="meta" style="font-size:8.5px; fill:#475569;">Low-ESR Electrolytic</text>
-  <line x1="30" y1="80" x2="60" y2="80" stroke="#dc2626" stroke-width="2.5" />
-  <line x1="60" y1="65" x2="60" y2="95" stroke="#dc2626" stroke-width="3" />
-  <path d="M 72 65 Q 68 80 72 95" stroke="#0f172a" stroke-width="3" fill="none" />
-  <line x1="72" y1="80" x2="115" y2="80" stroke="#0f172a" stroke-width="2.5" />
-  <text x="45" y="74" class="pin-num" style="fill:#dc2626; font-weight:700;">+</text>
-  <text x="95" y="74" class="pin-num" style="fill:#0f172a; font-weight:700;">-</text>
-  <text x="72" y="115" text-anchor="middle" class="callout-text" style="font-size:9px; fill:#334155;">Solder directly across</text>
-  <text x="72" y="128" text-anchor="middle" class="callout-text" style="font-size:9px; fill:#334155;">printer power lugs</text>
-</g>
-<line x1="1085" y1="223" x2="1415" y2="295" class="pwr-wire" />
-<line x1="1085" y1="255" x2="1500" y2="295" class="gnd-star" />
-<g transform="translate(1060, 430)" filter="url(#shadow)">
-  <rect x="0" y="0" width="490" height="230" rx="6" fill="#ffffff" stroke="#10b981" stroke-width="1.2" />
-  <rect x="0" y="0" width="490" height="28" rx="6" fill="#ecfdf5" />
-  <rect x="0" y="20" width="490" height="8" fill="#ecfdf5" />
-  <line x1="0" y1="28" x2="490" y2="28" stroke="#10b981" stroke-width="1" />
-  <text x="10" y="19" class="box-title">LCD1602 CHARACTER DISPLAY + I2C BACKPACK</text>
-  <text x="480" y="18" text-anchor="end" class="box-sub">PCF8574T (ADDR 0x27 / 0x3F)</text>
-</g>
-<text x="1076" y="476" class="callout-text" style="font-weight:600; fill:#065f46;">HD44780 16x2 Display with 8-bit I2C Expander Backpack</text>
-<text x="1076" y="490" class="note-text">★ Right-Angle 90° Header mod applied: Reduces internal chassis depth to 14.5mm</text>
-<rect x="1075" y="503" width="280" height="24" rx="4" fill="#f0fdf4" stroke="#bbf7d0" />
-<circle cx="1085" cy="515" r="3.5" fill="#475569" />
-<text x="1096" y="519" class="pin-label" style="font-size:11px;">GND</text>
-<text x="1345" y="519" text-anchor="end" class="meta" style="fill:#64748b; font-size:9px;">Logic Ground Return</text>
-<rect x="1075" y="536" width="280" height="24" rx="4" fill="#f0fdf4" stroke="#bbf7d0" />
-<circle cx="1085" cy="548" r="3.5" fill="#ea580c" />
-<text x="1096" y="552" class="pin-label" style="font-size:11px;">VCC</text>
-<text x="1345" y="552" text-anchor="end" class="meta" style="fill:#64748b; font-size:9px;">+3.3V Logic Power (or 5V)</text>
-<rect x="1075" y="570" width="280" height="24" rx="4" fill="#f0fdf4" stroke="#bbf7d0" />
-<circle cx="1085" cy="582" r="3.5" fill="#059669" />
-<text x="1096" y="586" class="pin-label" style="font-size:11px;">SDA</text>
-<text x="1345" y="586" text-anchor="end" class="meta" style="fill:#64748b; font-size:9px;">I2C Serial Data Bus</text>
-<rect x="1075" y="604" width="280" height="24" rx="4" fill="#f0fdf4" stroke="#bbf7d0" />
-<circle cx="1085" cy="616" r="3.5" fill="#10b981" />
-<text x="1096" y="620" class="pin-label" style="font-size:11px;">SCL</text>
-<text x="1345" y="620" text-anchor="end" class="meta" style="fill:#64748b; font-size:9px;">I2C Serial Clock Bus</text>
-<g transform="translate(1385, 510)">
-  <rect x="0" y="0" width="145" height="125" rx="6" fill="#ffffff" stroke="#94a3b8" />
-  <text x="72" y="22" text-anchor="middle" class="callout-title" style="fill:#334155;">CONTRAST TRIMMER</text>
-  <circle cx="72" cy="55" r="22" fill="#f1f5f9" stroke="#64748b" stroke-width="1.5" />
-  <line x1="60" y1="55" x2="84" y2="55" stroke="#0f172a" stroke-width="2" />
-  <text x="72" y="94" text-anchor="middle" class="callout-text" style="font-size:9px;">10kΩ Potentiometer</text>
-  <text x="72" y="108" text-anchor="middle" class="meta" style="font-size:8.5px; fill:#059669;">Default pull-ups: 4.7kΩ</text>
-</g>
-<g transform="translate(1060, 695)" filter="url(#shadow)">
-  <rect x="0" y="0" width="490" height="230" rx="6" fill="#ffffff" stroke="#06b6d4" stroke-width="1.2" />
-  <rect x="0" y="0" width="490" height="28" rx="6" fill="#ecfeff" />
-  <rect x="0" y="20" width="490" height="8" fill="#ecfeff" />
-  <line x1="0" y1="28" x2="490" y2="28" stroke="#06b6d4" stroke-width="1" />
-  <text x="10" y="19" class="box-title">DS3231 PRECISION REAL-TIME CLOCK</text>
-  <text x="480" y="18" text-anchor="end" class="box-sub">ZS-042 MODULE (I2C ADDR 0x68)</text>
-</g>
-<text x="1076" y="741" class="callout-text" style="font-weight:600; fill:#0e7490;">TCXO Temperature Compensated Crystal Oscillator with Battery Backup</text>
-<rect x="1075" y="765" width="280" height="21" rx="4" fill="#f0fdfa" stroke="#ccfbf1" />
-<circle cx="1085" cy="775" r="3" fill="#64748b" />
-<text x="1096" y="778.5" class="pin-label" style="font-size:10.5px;">32K</text>
-<text x="1345" y="778.5" text-anchor="end" class="meta" style="fill:#64748b; font-size:9px;">32.768 kHz Output (Unused)</text>
-<rect x="1075" y="793" width="280" height="21" rx="4" fill="#f0fdfa" stroke="#ccfbf1" />
-<circle cx="1085" cy="803" r="3" fill="#64748b" />
-<text x="1096" y="806.5" class="pin-label" style="font-size:10.5px;">SQW</text>
-<text x="1345" y="806.5" text-anchor="end" class="meta" style="fill:#64748b; font-size:9px;">Square Wave / Int (Unused)</text>
-<rect x="1075" y="821" width="280" height="21" rx="4" fill="#f0fdfa" stroke="#ccfbf1" />
-<circle cx="1085" cy="831" r="3" fill="#10b981" />
-<text x="1096" y="834.5" class="pin-label" style="font-size:10.5px;">SCL</text>
-<text x="1345" y="834.5" text-anchor="end" class="meta" style="fill:#64748b; font-size:9px;">I2C Serial Clock Bus</text>
-<rect x="1075" y="849" width="280" height="21" rx="4" fill="#f0fdfa" stroke="#ccfbf1" />
-<circle cx="1085" cy="859" r="3" fill="#059669" />
-<text x="1096" y="862.5" class="pin-label" style="font-size:10.5px;">SDA</text>
-<text x="1345" y="862.5" text-anchor="end" class="meta" style="fill:#64748b; font-size:9px;">I2C Serial Data Bus</text>
-<rect x="1075" y="877" width="280" height="21" rx="4" fill="#f0fdfa" stroke="#ccfbf1" />
-<circle cx="1085" cy="887" r="3" fill="#ea580c" />
-<text x="1096" y="890.5" class="pin-label" style="font-size:10.5px;">VCC</text>
-<text x="1345" y="890.5" text-anchor="end" class="meta" style="fill:#64748b; font-size:9px;">+3.3V Logic Power Input</text>
-<rect x="1075" y="905" width="280" height="21" rx="4" fill="#f0fdfa" stroke="#ccfbf1" />
-<circle cx="1085" cy="915" r="3" fill="#475569" />
-<text x="1096" y="918.5" class="pin-label" style="font-size:10.5px;">GND</text>
-<text x="1345" y="918.5" text-anchor="end" class="meta" style="fill:#64748b; font-size:9px;">Clean Logic Ground Return</text>
-<g transform="translate(1375, 770)">
-  <rect x="0" y="0" width="160" height="135" rx="6" fill="#fffbeb" stroke="#f59e0b" stroke-width="1.5" />
-  <text x="80" y="20" text-anchor="middle" class="callout-title" style="fill:#92400e; font-size:10px;">★ CR2032 DIODE MOD</text>
-  <circle cx="80" cy="52" r="22" fill="#e2e8f0" stroke="#94a3b8" stroke-width="1.5" />
-  <text x="80" y="55" text-anchor="middle" class="meta" style="font-size:9px; font-weight:700; fill:#1e293b;">CR2032</text>
-  <text x="80" y="65" text-anchor="middle" class="meta" style="font-size:8px; fill:#475569;">3V Lithium</text>
-  <text x="80" y="92" text-anchor="middle" class="callout-text" style="font-size:9px; font-weight:700; fill:#b45309;">IMPORTANT CRITICAL STEP:</text>
-  <text x="80" y="105" text-anchor="middle" class="callout-text" style="font-size:8.5px; fill:#78350f;">Desolder/cut diode D1 &amp; R200</text>
-  <text x="80" y="117" text-anchor="middle" class="callout-text" style="font-size:8.5px; fill:#78350f;">to disable charging circuit</text>
-  <text x="80" y="127" text-anchor="middle" class="callout-text" style="font-size:8.5px; fill:#78350f;">for non-rechargeable cells.</text>
-</g>
-<circle cx="260" cy="225" r="3" fill="#dc2626" />
-<path d="M 260 225 L 400 225 L 400 115 L 1020 115 L 1020 223 L 1075 223" class="pwr-wire" />
-<path d="M 980 115 L 980 298 L 904 298" class="pwr-wire" />
-<circle cx="980" cy="115" r="3.5" class="node-dot" fill="#dc2626" />
-<circle cx="400" cy="115" r="3.5" class="node-dot" fill="#dc2626" />
-<path d="M 200 325 L 380 325 L 380 95 L 1040 95 L 1040 255 L 1075 255" class="gnd-star" />
-<path d="M 1000 95 L 1000 336 L 904 336" class="gnd-star" />
-<circle cx="1000" cy="95" r="4.5" class="node-dot" fill="#0f172a" />
-<circle cx="380" cy="95" r="4.5" class="node-dot" fill="#0f172a" />
-<path d="M 904 412 L 960 412 L 960 548 L 1075 548" class="pwr-3v3" />
-<path d="M 960 548 L 960 887 L 1075 887" class="pwr-3v3" />
-<circle cx="960" cy="548" r="3.5" class="node-dot" fill="#ea580c" />
-<path d="M 904 336 L 940 336 L 940 515 L 1075 515" class="gnd-clean" />
-<path d="M 940 515 L 940 915 L 1075 915" class="gnd-clean" />
-<circle cx="940" cy="515" r="3" class="node-dot" fill="#475569" />
-<path d="M 496 336 L 420 336 L 420 676 L 320 676" class="gnd-clean" />
-<path d="M 420 676 L 420 806 L 320 806" class="gnd-clean" />
-<path d="M 420 806 L 420 879 L 320 879" class="gnd-clean" />
-<circle cx="420" cy="676" r="3" class="node-dot" fill="#475569" />
-<circle cx="420" cy="806" r="3" class="node-dot" fill="#475569" />
-<path d="M 496 450 L 435 450 L 435 125 L 1010 125 L 1010 289 L 1075 289" class="uart-tx" />
-<path d="M 1075 323 L 1025 323 L 1025 110 L 450 110 L 450 488 L 496 488" class="uart-rx" />
-<path d="M 496 260 L 465 260 L 465 95 L 1035 95 L 1035 582 L 1075 582" class="i2c-sda" />
-<path d="M 1035 582 L 1035 859 L 1075 859" class="i2c-sda" />
-<circle cx="1035" cy="582" r="3.5" class="node-dot" fill="#059669" />
-<path d="M 496 298 L 450 298 L 450 80 L 1048 80 L 1048 616 L 1075 616" class="i2c-scl" />
-<path d="M 1048 616 L 1048 831 L 1075 831" class="i2c-scl" />
-<circle cx="1048" cy="616" r="3.5" class="node-dot" fill="#10b981" />
-<path d="M 320 451 L 496 564" class="gpio-wire" />
-<path d="M 320 477 L 496 602" class="gpio-wire" />
-<path d="M 320 503 L 496 640" class="gpio-wire" />
-<path d="M 320 529 L 496 678" class="gpio-wire" />
-<path d="M 320 555 L 496 754" class="gpio-wire" />
-<path d="M 320 581 L 496 792" class="gpio-wire" />
-<path d="M 320 607 L 496 830" class="gpio-wire" />
-<path d="M 320 633 L 496 868" class="gpio-wire" />
-<path d="M 320 791 L 496 944" class="pwm-wire" stroke="#7c3aed" />
-<path d="M 320 861 L 360 861 L 360 982 L 496 982" class="pwm-wire" stroke="#a855f7" />
-<rect x="1120" y="1025" width="455" height="100" rx="8" fill="#ffffff" stroke="#94a3b8" stroke-width="1.2" filter="url(#shadow)" />
-<text x="1136" y="1051" class="title" style="font-size: 15px;">DCC PRINTER — ELECTRICAL SCHEMATIC</text>
-<text x="1136" y="1069" class="subtitle" style="font-size: 12px;">PSAM 2230 Device Art • Milestone 2 Functional Architecture</text>
-<line x1="1136" y1="1079" x2="1559" y2="1079" stroke="#e2e8f0" stroke-width="1" />
-<text x="1136" y="1097" class="meta">DESIGNER: Ariel Churi</text>
-<text x="1340" y="1097" class="meta">DATE: October 2026</text>
-<text x="1136" y="1113" class="meta">CONTROLLER: Raspberry Pi Pico (RP2040)</text>
-<text x="1450" y="1113" class="meta">REV: 2.0 (MERGED)</text>
+    <pattern
+       id="grid"
+       width="20"
+       height="20"
+       patternUnits="userSpaceOnUse">
+      <circle
+         cx="1"
+         cy="1"
+         r="1"
+         fill="#e2e8f0"
+         id="circle1" />
+    </pattern>
+    <filter
+       id="shadow"
+       x="-0.0020689656"
+       y="-0.0066666667"
+       width="1.0041379"
+       height="1.0133333">
+      <feDropShadow
+         dx="0"
+         dy="3"
+         stdDeviation="4"
+         flood-color="#0f172a"
+         flood-opacity="0.08" />
+    </filter>
+    <filter
+       id="chip-shadow"
+       x="-0.0028409091"
+       y="-0.00053763441"
+       width="1.0056818"
+       height="1.0018817">
+      <feDropShadow
+         dx="0"
+         dy="6"
+         stdDeviation="8"
+         flood-color="#0f172a"
+         flood-opacity="0.12" />
+    </filter>
+  </defs>
+  <rect
+     x="20"
+     y="20"
+     width="1560"
+     height="1110"
+     rx="10"
+     fill="none"
+     stroke="#cbd5e1"
+     stroke-width="1.5"
+     id="rect3" />
+  <g
+     transform="translate(45,45)"
+     id="g4">
+    <text
+       x="0"
+       y="0"
+       class="title"
+       id="text3">DCC THERMAL PRINTER — MASTER ELECTRICAL SCHEMATIC</text>
+    <text
+       x="0"
+       y="22"
+       class="subtitle"
+       id="text4">Raspberry Pi Pico (RP2040) Subsystem Interconnect, Star Grounding Topology &amp; Dual-Rail Power Distribution</text>
+  </g>
+  <g
+     transform="translate(1020,32)"
+     id="g11">
+    <rect
+       x="0"
+       y="0"
+       width="540"
+       height="75"
+       rx="6"
+       fill="#ffffff"
+       stroke="#cbd5e1"
+       filter="url(#shadow)"
+       id="rect4"
+       ry="6" />
+    <text
+       x="12"
+       y="16"
+       class="wire-label"
+       style="font-size:9.5px;fill:#334155"
+       id="text5">SYSTEM BUS &amp; SIGNAL COLOR CODING</text>
+    <line
+       x1="16"
+       y1="32"
+       x2="50"
+       y2="32"
+       class="pwr-wire"
+       id="line5" />
+    <text
+       x="56"
+       y="36"
+       class="meta"
+       style="font-size:10px"
+       id="text6">+5V Raw/Switched Rail</text>
+    <line
+       x1="200"
+       y1="32"
+       x2="234"
+       y2="32"
+       class="pwr-3v3"
+       id="line6" />
+    <text
+       x="240"
+       y="36"
+       class="meta"
+       style="font-size:10px"
+       id="text7">+3.3V Clean Logic Rail</text>
+    <line
+       x1="390"
+       y1="32"
+       x2="424"
+       y2="32"
+       class="gnd-star"
+       id="line7" />
+    <text
+       x="430"
+       y="36"
+       class="meta"
+       style="font-size:10px"
+       id="text8">Star GND (20 AWG)</text>
+    <line
+       x1="16"
+       y1="52"
+       x2="50"
+       y2="52"
+       class="uart-tx"
+       id="line8" />
+    <text
+       x="56"
+       y="56"
+       class="meta"
+       style="font-size:10px"
+       id="text9">UART1 TX (GP4)</text>
+    <line
+       x1="200"
+       y1="52"
+       x2="234"
+       y2="52"
+       class="uart-rx"
+       id="line9"
+       style="stroke:#00cdec;stroke-opacity:1" />
+    <text
+       x="240"
+       y="56"
+       class="meta"
+       style="font-size:10px"
+       id="text10">UART1 RX (GP5)</text>
+    <line
+       x1="390"
+       y1="52"
+       x2="424"
+       y2="52"
+       class="i2c-sda"
+       id="line10" />
+    <text
+       x="430"
+       y="56"
+       class="meta"
+       style="font-size:10px"
+       id="text11">I2C0 SDA / SCL</text>
+  </g>
+  <g
+     transform="translate(45,215)"
+     filter="url(#shadow)"
+     id="g14">
+    <rect
+       x="0"
+       y="0"
+       width="290"
+       height="225"
+       rx="6"
+       fill="#ffffff"
+       stroke="#64748b"
+       stroke-width="1.2"
+       id="rect11"
+       ry="6" />
+    <rect
+       x="0"
+       y="0"
+       width="290"
+       height="28"
+       rx="6"
+       fill="#e2e8f0"
+       id="rect12"
+       ry="6" />
+    <rect
+       x="0"
+       y="20"
+       width="290"
+       height="8"
+       fill="#e2e8f0"
+       id="rect13" />
+    <line
+       x1="0"
+       y1="28"
+       x2="290"
+       y2="28"
+       stroke="#64748b"
+       stroke-width="1"
+       id="line13" />
+    <text
+       x="10"
+       y="19"
+       class="box-title"
+       id="text13">POWER SUBSYSTEM</text>
+    <text
+       x="280"
+       y="18"
+       text-anchor="end"
+       class="box-sub"
+       id="text14">5V 3A DC INPUT</text>
+  </g>
+  <rect
+     x="45"
+     y="264"
+     width="85.6875"
+     height="60"
+     rx="4"
+     fill="#f8fafc"
+     stroke="#94a3b8"
+     id="rect14"
+     ry="4"
+     style="stroke-width:1" />
+  <text
+     x="55.233856"
+     y="252.94269"
+     class="pin-label"
+     style="font-size:9.03367px;stroke-width:1"
+     id="text15"
+     transform="scale(0.90336672,1.1069702)">DC BARREL JACK</text>
+  <text
+     x="55.233856"
+     y="266.49319"
+     class="meta"
+     style="font-size:8.1303px;stroke-width:1"
+     id="text16"
+     transform="scale(0.90336672,1.1069702)">5.5 x 2.1mm (3A)</text>
+  <circle
+     cx="150"
+     cy="285"
+     r="3"
+     fill="#dc2626"
+     id="circle16" />
+  <text
+     x="135"
+     y="280"
+     class="pin-num"
+     style="fill:#dc2626"
+     id="text17">+5V</text>
+  <circle
+     cx="150"
+     cy="305"
+     r="3"
+     fill="#0f172a"
+     id="circle17" />
+  <text
+     x="135"
+     y="314"
+     class="pin-num"
+     id="text18">GND</text>
+  <rect
+     x="210"
+     y="260"
+     width="105"
+     height="60"
+     rx="4"
+     fill="#f8fafc"
+     stroke="#94a3b8"
+     id="rect18"
+     ry="4" />
+  <text
+     x="218"
+     y="280"
+     class="pin-label"
+     style="font-size:10px"
+     id="text19">SPST SWITCH</text>
+  <text
+     x="218"
+     y="294"
+     class="meta"
+     style="font-size:9px"
+     id="text20">Adafruit #3221</text>
+  <circle
+     cx="230"
+     cy="305"
+     r="2.5"
+     fill="#dc2626"
+     id="circle20" />
+  <line
+     x1="230"
+     y1="305"
+     x2="255"
+     y2="296"
+     stroke="#dc2626"
+     stroke-width="2"
+     id="line20" />
+  <circle
+     cx="260"
+     cy="305"
+     r="2.5"
+     fill="#dc2626"
+     id="circle21" />
+  <line
+     x1="150"
+     y1="285"
+     x2="185"
+     y2="285"
+     class="pwr-wire"
+     id="line21" />
+  <line
+     x1="185"
+     y1="285"
+     x2="185"
+     y2="305"
+     class="pwr-wire"
+     id="line22" />
+  <line
+     x1="185"
+     y1="305"
+     x2="230"
+     y2="305"
+     class="pwr-wire"
+     id="line23" />
+  <rect
+     x="65"
+     y="340"
+     width="250"
+     height="85"
+     rx="5"
+     class="callout-box"
+     fill="#f1f5f9"
+     stroke="#0f172a"
+     stroke-width="1.8"
+     id="rect23"
+     ry="5"
+     style="stroke:#000000;stroke-opacity:1;stroke-dasharray:none" />
+  <text
+     x="75"
+     y="358"
+     class="callout-title"
+     style="fill:#0f172a"
+     id="text23">★ CENTRAL STAR GROUND HUB</text>
+  <text
+     x="75"
+     y="373"
+     class="callout-text"
+     id="text24"><tspan
+       sodipodi:role="line"
+       id="tspan270"
+       x="75"
+       y="373">Low-impedance single-point star ground at</tspan><tspan
+       sodipodi:role="line"
+       id="tspan271"
+       x="75"
+       y="385.5">DC input jack.</tspan></text>
+  <text
+     x="75"
+     y="400"
+     class="callout-text"
+     id="text25"><tspan
+       sodipodi:role="line"
+       id="tspan268"
+       x="75"
+       y="400">Eliminates 2.2A printer pulse ground</tspan><tspan
+       sodipodi:role="line"
+       id="tspan269"
+       x="75"
+       y="412.5">bounce from digital logic.</tspan></text>
+  <line
+     x1="150"
+     y1="305"
+     x2="175"
+     y2="305"
+     class="gnd-star"
+     id="line26" />
+  <line
+     x1="175"
+     y1="303.89041"
+     x2="175"
+     y2="340.48459"
+     class="gnd-star"
+     id="line27" />
+  <g
+     transform="translate(45,460)"
+     filter="url(#shadow)"
+     id="g31">
+    <rect
+       x="0"
+       y="0"
+       width="290"
+       height="320"
+       rx="6"
+       fill="#ffffff"
+       stroke="#f59e0b"
+       stroke-width="1.2"
+       id="rect28"
+       ry="6" />
+    <rect
+       x="0"
+       y="0"
+       width="290"
+       height="28"
+       rx="6"
+       fill="#fef3c7"
+       id="rect29"
+       ry="6" />
+    <rect
+       x="0"
+       y="20"
+       width="290"
+       height="8"
+       fill="#fef3c7"
+       id="rect30" />
+    <line
+       x1="0"
+       y1="28"
+       x2="290"
+       y2="28"
+       stroke="#f59e0b"
+       stroke-width="1"
+       id="line30" />
+    <text
+       x="10"
+       y="19"
+       class="box-title"
+       id="text30">ROTARY SWITCH (SP8T)</text>
+    <text
+       x="280"
+       y="18"
+       text-anchor="end"
+       class="box-sub"
+       id="text31">ALFA / ADAFRUIT #2925</text>
+  </g>
+  <text
+     x="60"
+     y="506"
+     class="callout-text"
+     style="font-weight:600;fill:#92400e"
+     id="text32">1-Pole 8-Position Switch (Active LOW, Internal Pull-Ups)</text>
+  <rect
+     x="60"
+     y="519"
+     width="260"
+     height="20"
+     rx="3"
+     fill="#fffbeb"
+     stroke="#fde68a"
+     id="rect32"
+     ry="3" />
+  <text
+     x="70"
+     y="533"
+     class="pin-label"
+     style="font-size:10px"
+     id="text33">Pos 1: DCC Funnel</text>
+  <text
+     x="265"
+     y="533"
+     class="pin-num"
+     style="font-weight:700;fill:#b45309"
+     id="text34">GP6</text>
+  <circle
+     cx="320"
+     cy="531"
+     r="3"
+     fill="#d97706"
+     id="circle34" />
+  <rect
+     x="60"
+     y="545"
+     width="260"
+     height="20"
+     rx="3"
+     fill="#fffbeb"
+     stroke="#fde68a"
+     id="rect34"
+     ry="3" />
+  <text
+     x="70"
+     y="559"
+     class="pin-label"
+     style="font-size:10px"
+     id="text35">Pos 2: MCC Seeker</text>
+  <text
+     x="265"
+     y="559"
+     class="pin-num"
+     style="font-weight:700;fill:#b45309"
+     id="text36">GP7</text>
+  <circle
+     cx="320"
+     cy="557"
+     r="3"
+     fill="#d97706"
+     id="circle36" />
+  <rect
+     x="60"
+     y="571"
+     width="260"
+     height="20"
+     rx="3"
+     fill="#fffbeb"
+     stroke="#fde68a"
+     id="rect36"
+     ry="3" />
+  <text
+     x="70"
+     y="585"
+     class="pin-label"
+     style="font-size:10px"
+     id="text37">Pos 3: Umerica Surv.</text>
+  <text
+     x="265"
+     y="585"
+     class="pin-num"
+     style="font-weight:700;fill:#b45309"
+     id="text38">GP8</text>
+  <circle
+     cx="320"
+     cy="583"
+     r="3"
+     fill="#d97706"
+     id="circle38" />
+  <rect
+     x="60"
+     y="597"
+     width="260"
+     height="20"
+     rx="3"
+     fill="#fffbeb"
+     stroke="#fde68a"
+     id="rect38"
+     ry="3" />
+  <text
+     x="70"
+     y="611"
+     class="pin-label"
+     style="font-size:10px"
+     id="text39">Pos 4: X-Crawl Athl.</text>
+  <text
+     x="265"
+     y="611"
+     class="pin-num"
+     style="font-weight:700;fill:#b45309"
+     id="text40">GP9</text>
+  <circle
+     cx="320"
+     cy="609"
+     r="3"
+     fill="#d97706"
+     id="circle40" />
+  <rect
+     x="60"
+     y="623"
+     width="260"
+     height="20"
+     rx="3"
+     fill="#fffbeb"
+     stroke="#fde68a"
+     id="rect40"
+     ry="3" />
+  <text
+     x="70"
+     y="637"
+     class="pin-label"
+     style="font-size:10px"
+     id="text41">Pos 5: Lankhmar Cit.</text>
+  <text
+     x="265"
+     y="637"
+     class="pin-num"
+     style="font-weight:700;fill:#b45309"
+     id="text42">GP10</text>
+  <circle
+     cx="320"
+     cy="635"
+     r="3"
+     fill="#d97706"
+     id="circle42" />
+  <rect
+     x="60"
+     y="649"
+     width="260"
+     height="20"
+     rx="3"
+     fill="#fffbeb"
+     stroke="#fde68a"
+     id="rect42"
+     ry="3" />
+  <text
+     x="70"
+     y="663"
+     class="pin-label"
+     style="font-size:10px"
+     id="text43">Pos 6: Empire East</text>
+  <text
+     x="265"
+     y="663"
+     class="pin-num"
+     style="font-weight:700;fill:#b45309"
+     id="text44">GP11</text>
+  <circle
+     cx="320"
+     cy="661"
+     r="3"
+     fill="#d97706"
+     id="circle44" />
+  <rect
+     x="60"
+     y="675"
+     width="260"
+     height="20"
+     rx="3"
+     fill="#fffbeb"
+     stroke="#fde68a"
+     id="rect44"
+     ry="3" />
+  <text
+     x="70"
+     y="689"
+     class="pin-label"
+     style="font-size:10px"
+     id="text45">Pos 7: Dying Earth</text>
+  <text
+     x="265"
+     y="689"
+     class="pin-num"
+     style="font-weight:700;fill:#b45309"
+     id="text46">GP12</text>
+  <circle
+     cx="320"
+     cy="687"
+     r="3"
+     fill="#d97706"
+     id="circle46" />
+  <rect
+     x="60"
+     y="701"
+     width="260"
+     height="20"
+     rx="3"
+     fill="#fffbeb"
+     stroke="#fde68a"
+     id="rect46"
+     ry="3" />
+  <text
+     x="70"
+     y="715"
+     class="pin-label"
+     style="font-size:10px"
+     id="text47">Pos 8: Beast-o-Matic</text>
+  <text
+     x="265"
+     y="715"
+     class="pin-num"
+     style="font-weight:700;fill:#b45309"
+     id="text48">GP13</text>
+  <circle
+     cx="320"
+     cy="713"
+     r="3"
+     fill="#d97706"
+     id="circle48" />
+  <rect
+     x="60"
+     y="744"
+     width="260"
+     height="24"
+     rx="3"
+     fill="#f1f5f9"
+     stroke="#cbd5e1"
+     id="rect48"
+     ry="3"
+     style="stroke:#fde78b;stroke-opacity:0.53333336;fill:#fffbeb;fill-opacity:1" />
+  <circle
+     cx="75"
+     cy="756"
+     r="3"
+     fill="#475569"
+     id="circle49" />
+  <text
+     x="87"
+     y="760"
+     class="pin-label"
+     style="font-size:10.5px"
+     id="text49">COMMON (WIPER) PIN</text>
+  <text
+     x="310"
+     y="760"
+     text-anchor="end"
+     class="pin-num"
+     id="text50">LOGIC GND</text>
+  <rect
+     x="60"
+     y="846.00006"
+     width="260"
+     height="136"
+     rx="4"
+     fill="#ffffff"
+     stroke="#ddd6fe"
+     id="rect53"
+     ry="4"
+     style="stroke-width:1" />
+  <text
+     x="70"
+     y="864"
+     class="box-title"
+     style="font-size:11.5px;fill:#6d28d9"
+     id="text54">MOMENTARY MICROSWITCH</text>
+  <text
+     x="70"
+     y="881"
+     class="pin-label"
+     id="text55">NO (Normally Open)</text>
+  <text
+     x="260"
+     y="881"
+     class="pin-num"
+     style="font-weight:700;fill:#6d28d9"
+     id="text56">GP14</text>
+  <circle
+     cx="320"
+     cy="871"
+     r="3"
+     fill="#6d28d9"
+     id="circle56" />
+  <text
+     x="70"
+     y="896"
+     class="pin-label"
+     id="text57">COM Contact</text>
+  <text
+     x="260"
+     y="896"
+     class="pin-num"
+     id="text58">GND</text>
+  <circle
+     cx="320"
+     cy="886"
+     r="3"
+     fill="#475569"
+     id="circle58" />
+  <rect
+     x="85.393936"
+     y="910"
+     width="220.60606"
+     height="56"
+     rx="4"
+     fill="#ffffff"
+     stroke="#ddd6fe"
+     id="rect58"
+     ry="4"
+     style="stroke-width:0.999999" />
+  <text
+     x="93.878777"
+     y="925.27271"
+     class="box-title"
+     style="font-size:9.75758px;fill:#6d28d9;stroke-width:0.999999"
+     id="text59">INTEGRATED GLOW LED (PWM)</text>
+  <text
+     x="93.878777"
+     y="939.69696"
+     class="pin-label"
+     id="text60"
+     style="stroke-width:0.999999">Anode (+) via 220Ω</text>
+  <text
+     x="255.09091"
+     y="939.69696"
+     class="pin-num"
+     style="font-weight:700;fill:#7c3aed;stroke-width:0.999999"
+     id="text61">GP15</text>
+  <circle
+     cx="306"
+     cy="941"
+     r="3"
+     fill="#7c3aed"
+     id="circle61" />
+  <text
+     x="93.878777"
+     y="954.96973"
+     class="pin-label"
+     id="text62"
+     style="stroke-width:0.999999">Cathode (-) Ground</text>
+  <text
+     x="255.09091"
+     y="954.96973"
+     class="pin-num"
+     id="text63"
+     style="stroke-width:0.999999">GND</text>
+  <circle
+     cx="306"
+     cy="959"
+     r="3"
+     fill="#475569"
+     id="circle63" />
+  <g
+     transform="translate(496,137)"
+     filter="url(#chip-shadow)"
+     id="g71">
+    <rect
+       x="0"
+       y="0"
+       width="440"
+       height="920"
+       rx="14"
+       fill="#064e3b"
+       stroke="#047857"
+       stroke-width="2.5"
+       id="rect63"
+       ry="14" />
+    <rect
+       x="10"
+       y="10"
+       width="420"
+       height="900"
+       rx="10"
+       fill="#065f46"
+       id="rect64"
+       ry="10" />
+    <rect
+       x="175"
+       y="-10"
+       width="90"
+       height="30"
+       rx="3"
+       fill="#94a3b8"
+       stroke="#475569"
+       id="rect65"
+       ry="3" />
+    <text
+       x="220"
+       y="10"
+       text-anchor="middle"
+       class="meta"
+       style="font-weight:700;font-size:9px;fill:#1e293b"
+       id="text65">MICRO-USB</text>
+    <rect
+       x="170"
+       y="240"
+       width="100"
+       height="100"
+       rx="4"
+       fill="#0f172a"
+       stroke="#334155"
+       id="rect66"
+       ry="4" />
+    <circle
+       cx="185"
+       cy="255"
+       r="3"
+       fill="#64748b"
+       id="circle66" />
+    <text
+       x="220"
+       y="285"
+       text-anchor="middle"
+       class="pin-label"
+       style="font-weight:800;font-size:12px;fill:#f8fafc"
+       id="text66">RP2040</text>
+    <text
+       x="220"
+       y="302"
+       text-anchor="middle"
+       class="meta"
+       style="font-size:9px;fill:#94a3b8"
+       id="text67">DUAL CORTEX-M0+</text>
+    <text
+       x="220"
+       y="318"
+       text-anchor="middle"
+       class="meta"
+       style="font-size:9px;fill:#34d399"
+       id="text68">CIRCUITPYTHON 9.X</text>
+    <rect
+       x="208"
+       y="75"
+       width="24"
+       height="14"
+       rx="2"
+       fill="#22c55e"
+       stroke="#16a34a"
+       id="rect68"
+       ry="2" />
+    <text
+       x="220"
+       y="104"
+       text-anchor="middle"
+       class="meta"
+       style="font-size:8px;fill:#a7f3d0"
+       id="text69">GP25 LED</text>
+    <text
+       x="220"
+       y="170"
+       text-anchor="middle"
+       class="title"
+       style="font-size:18px;letter-spacing:1px;fill:#f8fafc"
+       id="text70">RASPBERRY PI PICO</text>
+    <text
+       x="220"
+       y="190"
+       text-anchor="middle"
+       class="subtitle"
+       style="font-size:11px;fill:#a7f3d0"
+       id="text71">PRIMARY SYSTEM CONTROLLER</text>
+  </g>
+  <circle
+     cx="496"
+     cy="340"
+     r="5"
+     fill="#fef08a"
+     stroke="#ca8a04"
+     stroke-width="1.5"
+     id="circle71" />
+  <circle
+     cx="496"
+     cy="340"
+     r="2"
+     fill="#0f172a"
+     id="circle72" />
+  <text
+     x="508"
+     y="343.5"
+     class="pin-num"
+     style="font-weight:700;fill:#e2e8f0"
+     id="text72">1</text>
+  <text
+     x="530"
+     y="344"
+     class="pin-label"
+     style="font-size:11px;fill:#f8fafc"
+     id="text73">GP0</text>
+  <text
+     x="575"
+     y="343.5"
+     class="meta"
+     style="font-size:9px;fill:#059669"
+     id="text74">I2C0 SDA (LCD/RTC)</text>
+  <circle
+     cx="496"
+     cy="378"
+     r="5"
+     fill="#fef08a"
+     stroke="#ca8a04"
+     stroke-width="1.5"
+     id="circle74" />
+  <circle
+     cx="496"
+     cy="378"
+     r="2"
+     fill="#0f172a"
+     id="circle75" />
+  <text
+     x="508"
+     y="381.5"
+     class="pin-num"
+     style="font-weight:700;fill:#e2e8f0"
+     id="text75">2</text>
+  <text
+     x="530"
+     y="382"
+     class="pin-label"
+     style="font-size:11px;fill:#f8fafc"
+     id="text76">GP1</text>
+  <text
+     x="575"
+     y="381.5"
+     class="meta"
+     style="font-size:9px;fill:#10b981"
+     id="text77">I2C0 SCL (LCD/RTC)</text>
+  <circle
+     cx="496"
+     cy="416"
+     r="5"
+     fill="#fef08a"
+     stroke="#ca8a04"
+     stroke-width="1.5"
+     id="circle77" />
+  <circle
+     cx="496"
+     cy="416"
+     r="2"
+     fill="#0f172a"
+     id="circle78" />
+  <text
+     x="508"
+     y="419.5"
+     class="pin-num"
+     style="font-weight:700;fill:#e2e8f0"
+     id="text78">3</text>
+  <text
+     x="530"
+     y="420"
+     class="pin-label"
+     style="font-size:11px;fill:#f8fafc"
+     id="text79">GND</text>
+  <text
+     x="575"
+     y="419.5"
+     class="meta"
+     style="font-size:9px;fill:#94a3b8"
+     id="text80">GND</text>
+  <circle
+     cx="496"
+     cy="454"
+     r="5"
+     fill="#fef08a"
+     stroke="#ca8a04"
+     stroke-width="1.5"
+     id="circle80" />
+  <circle
+     cx="496"
+     cy="454"
+     r="2"
+     fill="#0f172a"
+     id="circle81" />
+  <text
+     x="508"
+     y="457.5"
+     class="pin-num"
+     style="font-weight:700;fill:#e2e8f0"
+     id="text81">4</text>
+  <text
+     x="530"
+     y="458"
+     class="pin-label"
+     style="font-size:11px;fill:#f8fafc"
+     id="text82">GP2</text>
+  <circle
+     cx="496"
+     cy="492"
+     r="5"
+     fill="#fef08a"
+     stroke="#ca8a04"
+     stroke-width="1.5"
+     id="circle82" />
+  <circle
+     cx="496"
+     cy="492"
+     r="2"
+     fill="#0f172a"
+     id="circle83" />
+  <text
+     x="508"
+     y="495.5"
+     class="pin-num"
+     style="font-weight:700;fill:#e2e8f0"
+     id="text83">5</text>
+  <text
+     x="530"
+     y="496"
+     class="pin-label"
+     style="font-size:11px;fill:#f8fafc"
+     id="text84">GP3</text>
+  <circle
+     cx="496"
+     cy="530"
+     r="5"
+     fill="#fef08a"
+     stroke="#ca8a04"
+     stroke-width="1.5"
+     id="circle84" />
+  <circle
+     cx="496"
+     cy="530"
+     r="2"
+     fill="#0f172a"
+     id="circle85" />
+  <text
+     x="508"
+     y="533.5"
+     class="pin-num"
+     style="font-weight:700;fill:#e2e8f0"
+     id="text85">6</text>
+  <text
+     x="530"
+     y="534"
+     class="pin-label"
+     style="font-size:11px;fill:#f8fafc"
+     id="text86">GP4</text>
+  <text
+     x="575"
+     y="533.5"
+     class="meta"
+     style="font-size:9px;fill:#2563eb"
+     id="text87">UART1 TX -&gt; Printer</text>
+  <circle
+     cx="496"
+     cy="568"
+     r="5"
+     fill="#fef08a"
+     stroke="#ca8a04"
+     stroke-width="1.5"
+     id="circle87" />
+  <circle
+     cx="496"
+     cy="568"
+     r="2"
+     fill="#0f172a"
+     id="circle88" />
+  <text
+     x="508"
+     y="571.5"
+     class="pin-num"
+     style="font-weight:700;fill:#e2e8f0"
+     id="text88">7</text>
+  <text
+     x="530"
+     y="572"
+     class="pin-label"
+     style="font-size:11px;fill:#f8fafc"
+     id="text89">GP5</text>
+  <text
+     x="575"
+     y="571.5"
+     class="meta"
+     style="font-size:9px;fill:#0284c7"
+     id="text90">UART1 RX &lt;- Printer</text>
+  <circle
+     cx="496"
+     cy="606"
+     r="5"
+     fill="#fef08a"
+     stroke="#ca8a04"
+     stroke-width="1.5"
+     id="circle90" />
+  <circle
+     cx="496"
+     cy="606"
+     r="2"
+     fill="#0f172a"
+     id="circle91" />
+  <text
+     x="508"
+     y="609.5"
+     class="pin-num"
+     style="font-weight:700;fill:#e2e8f0"
+     id="text91">8</text>
+  <text
+     x="624.73889"
+     y="685.5"
+     class="pin-label"
+     style="font-size:11px;fill:#f8fafc"
+     id="text92">GND</text>
+  <text
+     x="575"
+     y="609.5"
+     class="meta"
+     style="font-size:9px;fill:#94a3b8"
+     id="text93">GND</text>
+  <circle
+     cx="496"
+     cy="644"
+     r="5"
+     fill="#fef08a"
+     stroke="#ca8a04"
+     stroke-width="1.5"
+     id="circle93" />
+  <circle
+     cx="496"
+     cy="644"
+     r="2"
+     fill="#0f172a"
+     id="circle94" />
+  <text
+     x="508"
+     y="647.5"
+     class="pin-num"
+     style="font-weight:700;fill:#e2e8f0"
+     id="text94">9</text>
+  <text
+     x="530"
+     y="648"
+     class="pin-label"
+     style="font-size:11px;fill:#f8fafc"
+     id="text95">GP6</text>
+  <text
+     x="575"
+     y="647.5"
+     class="meta"
+     style="font-size:9px;fill:#d97706"
+     id="text96">Rotary 1 (DCC)</text>
+  <circle
+     cx="496"
+     cy="682"
+     r="5"
+     fill="#fef08a"
+     stroke="#ca8a04"
+     stroke-width="1.5"
+     id="circle96" />
+  <circle
+     cx="496"
+     cy="682"
+     r="2"
+     fill="#0f172a"
+     id="circle97" />
+  <text
+     x="508"
+     y="685.5"
+     class="pin-num"
+     style="font-weight:700;fill:#e2e8f0"
+     id="text97">10</text>
+  <text
+     x="530"
+     y="686"
+     class="pin-label"
+     style="font-size:11px;fill:#f8fafc"
+     id="text98">GP7</text>
+  <text
+     x="575"
+     y="685.5"
+     class="meta"
+     style="font-size:9px;fill:#d97706"
+     id="text99">Rotary 2 (MCC)</text>
+  <circle
+     cx="496"
+     cy="720"
+     r="5"
+     fill="#fef08a"
+     stroke="#ca8a04"
+     stroke-width="1.5"
+     id="circle99" />
+  <circle
+     cx="496"
+     cy="720"
+     r="2"
+     fill="#0f172a"
+     id="circle100" />
+  <text
+     x="508"
+     y="723.5"
+     class="pin-num"
+     style="font-weight:700;fill:#e2e8f0"
+     id="text100">11</text>
+  <text
+     x="530"
+     y="724"
+     class="pin-label"
+     style="font-size:11px;fill:#f8fafc"
+     id="text101">GP8</text>
+  <text
+     x="575"
+     y="723.5"
+     class="meta"
+     style="font-size:9px;fill:#d97706"
+     id="text102">Rotary 3 (Umerica)</text>
+  <circle
+     cx="496"
+     cy="758"
+     r="5"
+     fill="#fef08a"
+     stroke="#ca8a04"
+     stroke-width="1.5"
+     id="circle102" />
+  <circle
+     cx="496"
+     cy="758"
+     r="2"
+     fill="#0f172a"
+     id="circle103" />
+  <text
+     x="508"
+     y="761.5"
+     class="pin-num"
+     style="font-weight:700;fill:#e2e8f0"
+     id="text103">12</text>
+  <text
+     x="530"
+     y="762"
+     class="pin-label"
+     style="font-size:11px;fill:#f8fafc"
+     id="text104">GP9</text>
+  <text
+     x="575"
+     y="761.5"
+     class="meta"
+     style="font-size:9px;fill:#d97706"
+     id="text105">Rotary 4 (X-Crawl)</text>
+  <circle
+     cx="496"
+     cy="796"
+     r="5"
+     fill="#fef08a"
+     stroke="#ca8a04"
+     stroke-width="1.5"
+     id="circle105" />
+  <circle
+     cx="496"
+     cy="796"
+     r="2"
+     fill="#0f172a"
+     id="circle106" />
+  <text
+     x="508"
+     y="799.5"
+     class="pin-num"
+     style="font-weight:700;fill:#e2e8f0"
+     id="text106">13</text>
+  <text
+     x="530"
+     y="800"
+     class="pin-label"
+     style="font-size:11px;fill:#f8fafc"
+     id="text107">GND</text>
+  <text
+     x="575"
+     y="799.5"
+     class="meta"
+     style="font-size:9px;fill:#94a3b8"
+     id="text108">GND</text>
+  <circle
+     cx="496"
+     cy="834"
+     r="5"
+     fill="#fef08a"
+     stroke="#ca8a04"
+     stroke-width="1.5"
+     id="circle108" />
+  <circle
+     cx="496"
+     cy="834"
+     r="2"
+     fill="#0f172a"
+     id="circle109" />
+  <text
+     x="508"
+     y="837.5"
+     class="pin-num"
+     style="font-weight:700;fill:#e2e8f0"
+     id="text109">14</text>
+  <text
+     x="530"
+     y="838"
+     class="pin-label"
+     style="font-size:11px;fill:#f8fafc"
+     id="text110">GP10</text>
+  <text
+     x="575"
+     y="837.5"
+     class="meta"
+     style="font-size:9px;fill:#d97706"
+     id="text111">Rotary 5 (Lankhmar)</text>
+  <circle
+     cx="496"
+     cy="872"
+     r="5"
+     fill="#fef08a"
+     stroke="#ca8a04"
+     stroke-width="1.5"
+     id="circle111" />
+  <circle
+     cx="496"
+     cy="872"
+     r="2"
+     fill="#0f172a"
+     id="circle112" />
+  <text
+     x="508"
+     y="875.5"
+     class="pin-num"
+     style="font-weight:700;fill:#e2e8f0"
+     id="text112">15</text>
+  <text
+     x="530"
+     y="876"
+     class="pin-label"
+     style="font-size:11px;fill:#f8fafc"
+     id="text113">GP11</text>
+  <text
+     x="575"
+     y="875.5"
+     class="meta"
+     style="font-size:9px;fill:#d97706"
+     id="text114">Rotary 6 (Empire East)</text>
+  <circle
+     cx="496"
+     cy="910"
+     r="5"
+     fill="#fef08a"
+     stroke="#ca8a04"
+     stroke-width="1.5"
+     id="circle114" />
+  <circle
+     cx="496"
+     cy="910"
+     r="2"
+     fill="#0f172a"
+     id="circle115" />
+  <text
+     x="508"
+     y="913.5"
+     class="pin-num"
+     style="font-weight:700;fill:#e2e8f0"
+     id="text115">16</text>
+  <text
+     x="530"
+     y="914"
+     class="pin-label"
+     style="font-size:11px;fill:#f8fafc"
+     id="text116">GP12</text>
+  <text
+     x="575"
+     y="913.5"
+     class="meta"
+     style="font-size:9px;fill:#d97706"
+     id="text117">Rotary 7 (Dying Earth)</text>
+  <circle
+     cx="496"
+     cy="948"
+     r="5"
+     fill="#fef08a"
+     stroke="#ca8a04"
+     stroke-width="1.5"
+     id="circle117" />
+  <circle
+     cx="496"
+     cy="948"
+     r="2"
+     fill="#0f172a"
+     id="circle118" />
+  <text
+     x="508"
+     y="951.5"
+     class="pin-num"
+     style="font-weight:700;fill:#e2e8f0"
+     id="text118">17</text>
+  <text
+     x="530"
+     y="952"
+     class="pin-label"
+     style="font-size:11px;fill:#f8fafc"
+     id="text119">GP13</text>
+  <text
+     x="575"
+     y="951.5"
+     class="meta"
+     style="font-size:9px;fill:#d97706"
+     id="text120">Rotary 8 (Beast-o-Matic)</text>
+  <circle
+     cx="496"
+     cy="986"
+     r="5"
+     fill="#fef08a"
+     stroke="#ca8a04"
+     stroke-width="1.5"
+     id="circle120" />
+  <circle
+     cx="496"
+     cy="986"
+     r="2"
+     fill="#0f172a"
+     id="circle121" />
+  <text
+     x="508"
+     y="989.5"
+     class="pin-num"
+     style="font-weight:700;fill:#e2e8f0"
+     id="text121">18</text>
+  <text
+     x="530"
+     y="990"
+     class="pin-label"
+     style="font-size:11px;fill:#f8fafc"
+     id="text122">GND</text>
+  <text
+     x="575"
+     y="989.5"
+     class="meta"
+     style="font-size:9px;fill:#94a3b8"
+     id="text123">GND</text>
+  <circle
+     cx="496"
+     cy="1024"
+     r="5"
+     fill="#fef08a"
+     stroke="#ca8a04"
+     stroke-width="1.5"
+     id="circle123" />
+  <circle
+     cx="496"
+     cy="1024"
+     r="2"
+     fill="#0f172a"
+     id="circle124" />
+  <text
+     x="508"
+     y="1027.5"
+     class="pin-num"
+     style="font-weight:700;fill:#e2e8f0"
+     id="text124">19</text>
+  <text
+     x="530"
+     y="1028"
+     class="pin-label"
+     style="font-size:11px;fill:#f8fafc"
+     id="text125">GP14</text>
+  <text
+     x="575"
+     y="1027.5"
+     class="meta"
+     style="font-size:9px;fill:#7c3aed"
+     id="text126">Button In (Active LOW)</text>
+  <circle
+     cx="496"
+     cy="1062"
+     r="5"
+     fill="#fef08a"
+     stroke="#ca8a04"
+     stroke-width="1.5"
+     id="circle126" />
+  <circle
+     cx="496"
+     cy="1062"
+     r="2"
+     fill="#0f172a"
+     id="circle127" />
+  <text
+     x="508"
+     y="1065.5"
+     class="pin-num"
+     style="font-weight:700;fill:#e2e8f0"
+     id="text127">20</text>
+  <text
+     x="530"
+     y="1066"
+     class="pin-label"
+     style="font-size:11px;fill:#f8fafc"
+     id="text128">GP15</text>
+  <text
+     x="575"
+     y="1065.5"
+     class="meta"
+     style="font-size:9px;fill:#a855f7"
+     id="text129">PWM Out (Button LED)</text>
+  <circle
+     cx="904"
+     cy="340"
+     r="5"
+     fill="#fef08a"
+     stroke="#ca8a04"
+     stroke-width="1.5"
+     id="circle129" />
+  <circle
+     cx="904"
+     cy="340"
+     r="2"
+     fill="#0f172a"
+     id="circle130" />
+  <text
+     x="892"
+     y="343.5"
+     text-anchor="end"
+     class="pin-num"
+     style="font-weight:700;fill:#e2e8f0"
+     id="text130">40</text>
+  <text
+     x="870"
+     y="344"
+     text-anchor="end"
+     class="pin-label"
+     style="font-size:11px;fill:#f8fafc"
+     id="text131">VBUS</text>
+  <text
+     x="815"
+     y="343.5"
+     text-anchor="end"
+     class="meta"
+     style="font-weight:700;font-size:9.5px;fill:#dc2626"
+     id="text132">5V USB In (Unconnected)</text>
+  <circle
+     cx="904"
+     cy="378"
+     r="5"
+     fill="#fef08a"
+     stroke="#ca8a04"
+     stroke-width="1.5"
+     id="circle132" />
+  <circle
+     cx="904"
+     cy="378"
+     r="2"
+     fill="#0f172a"
+     id="circle133" />
+  <text
+     x="892"
+     y="381.5"
+     text-anchor="end"
+     class="pin-num"
+     style="font-weight:700;fill:#e2e8f0"
+     id="text133">39</text>
+  <text
+     x="870"
+     y="382"
+     text-anchor="end"
+     class="pin-label"
+     style="font-size:11px;fill:#f8fafc"
+     id="text134">VSYS</text>
+  <text
+     x="815"
+     y="381.5"
+     text-anchor="end"
+     class="meta"
+     style="font-weight:700;font-size:9.5px;fill:#dc2626"
+     id="text135">Switched +5V Main Rail</text>
+  <circle
+     cx="904"
+     cy="416"
+     r="5"
+     fill="#fef08a"
+     stroke="#ca8a04"
+     stroke-width="1.5"
+     id="circle135" />
+  <circle
+     cx="904"
+     cy="416"
+     r="2"
+     fill="#0f172a"
+     id="circle136" />
+  <text
+     x="892"
+     y="419.5"
+     text-anchor="end"
+     class="pin-num"
+     style="font-weight:700;fill:#e2e8f0"
+     id="text136">38</text>
+  <text
+     x="870"
+     y="420"
+     text-anchor="end"
+     class="pin-label"
+     style="font-size:11px;fill:#f8fafc"
+     id="text137">GND</text>
+  <text
+     x="815"
+     y="419.5"
+     text-anchor="end"
+     class="meta"
+     style="font-weight:700;font-size:9.5px;fill:#38bdf8"
+     id="text138">Pico Ground to Star Hub</text>
+  <circle
+     cx="904"
+     cy="454"
+     r="5"
+     fill="#fef08a"
+     stroke="#ca8a04"
+     stroke-width="1.5"
+     id="circle138" />
+  <circle
+     cx="904"
+     cy="454"
+     r="2"
+     fill="#0f172a"
+     id="circle139" />
+  <text
+     x="892"
+     y="457.5"
+     text-anchor="end"
+     class="pin-num"
+     style="font-weight:700;fill:#e2e8f0"
+     id="text139">37</text>
+  <text
+     x="870"
+     y="458"
+     text-anchor="end"
+     class="pin-label"
+     style="font-size:11px;fill:#f8fafc"
+     id="text140">3V3_EN</text>
+  <circle
+     cx="904"
+     cy="492"
+     r="5"
+     fill="#fef08a"
+     stroke="#ca8a04"
+     stroke-width="1.5"
+     id="circle140" />
+  <circle
+     cx="904"
+     cy="492"
+     r="2"
+     fill="#0f172a"
+     id="circle141" />
+  <text
+     x="892"
+     y="495.5"
+     text-anchor="end"
+     class="pin-num"
+     style="font-weight:700;fill:#e2e8f0"
+     id="text141">36</text>
+  <text
+     x="870"
+     y="496"
+     text-anchor="end"
+     class="pin-label"
+     style="font-size:11px;fill:#f8fafc"
+     id="text142">3V3_OUT</text>
+  <text
+     x="815"
+     y="495.5"
+     text-anchor="end"
+     class="meta"
+     style="font-weight:700;font-size:9.5px;fill:#ea580c"
+     id="text143">+3.3V Regulated Output</text>
+  <circle
+     cx="904"
+     cy="530"
+     r="5"
+     fill="#fef08a"
+     stroke="#ca8a04"
+     stroke-width="1.5"
+     id="circle143" />
+  <circle
+     cx="904"
+     cy="530"
+     r="2"
+     fill="#0f172a"
+     id="circle144" />
+  <text
+     x="892"
+     y="533.5"
+     text-anchor="end"
+     class="pin-num"
+     style="font-weight:700;fill:#e2e8f0"
+     id="text144">35</text>
+  <text
+     x="870"
+     y="534"
+     text-anchor="end"
+     class="pin-label"
+     style="font-size:11px;fill:#f8fafc"
+     id="text145">ADC_VREF</text>
+  <circle
+     cx="904"
+     cy="568"
+     r="5"
+     fill="#fef08a"
+     stroke="#ca8a04"
+     stroke-width="1.5"
+     id="circle145" />
+  <circle
+     cx="904"
+     cy="568"
+     r="2"
+     fill="#0f172a"
+     id="circle146" />
+  <text
+     x="892"
+     y="571.5"
+     text-anchor="end"
+     class="pin-num"
+     style="font-weight:700;fill:#e2e8f0"
+     id="text146">34</text>
+  <text
+     x="870"
+     y="572"
+     text-anchor="end"
+     class="pin-label"
+     style="font-size:11px;fill:#f8fafc"
+     id="text147">GP28</text>
+  <circle
+     cx="904"
+     cy="606"
+     r="5"
+     fill="#fef08a"
+     stroke="#ca8a04"
+     stroke-width="1.5"
+     id="circle147" />
+  <circle
+     cx="904"
+     cy="606"
+     r="2"
+     fill="#0f172a"
+     id="circle148" />
+  <text
+     x="892"
+     y="609.5"
+     text-anchor="end"
+     class="pin-num"
+     style="font-weight:700;fill:#e2e8f0"
+     id="text148">33</text>
+  <text
+     x="870"
+     y="610"
+     text-anchor="end"
+     class="pin-label"
+     style="font-size:11px;fill:#f8fafc"
+     id="text149">GND</text>
+  <circle
+     cx="904"
+     cy="644"
+     r="5"
+     fill="#fef08a"
+     stroke="#ca8a04"
+     stroke-width="1.5"
+     id="circle149" />
+  <circle
+     cx="904"
+     cy="644"
+     r="2"
+     fill="#0f172a"
+     id="circle150" />
+  <text
+     x="892"
+     y="647.5"
+     text-anchor="end"
+     class="pin-num"
+     style="font-weight:700;fill:#e2e8f0"
+     id="text150">32</text>
+  <text
+     x="870"
+     y="648"
+     text-anchor="end"
+     class="pin-label"
+     style="font-size:11px;fill:#f8fafc"
+     id="text151">GP27</text>
+  <circle
+     cx="904"
+     cy="682"
+     r="5"
+     fill="#fef08a"
+     stroke="#ca8a04"
+     stroke-width="1.5"
+     id="circle151" />
+  <circle
+     cx="904"
+     cy="682"
+     r="2"
+     fill="#0f172a"
+     id="circle152" />
+  <text
+     x="892"
+     y="685.5"
+     text-anchor="end"
+     class="pin-num"
+     style="font-weight:700;fill:#e2e8f0"
+     id="text152">31</text>
+  <text
+     x="870"
+     y="686"
+     text-anchor="end"
+     class="pin-label"
+     style="font-size:11px;fill:#f8fafc"
+     id="text153">GP26</text>
+  <circle
+     cx="904"
+     cy="720"
+     r="5"
+     fill="#fef08a"
+     stroke="#ca8a04"
+     stroke-width="1.5"
+     id="circle153" />
+  <circle
+     cx="904"
+     cy="720"
+     r="2"
+     fill="#0f172a"
+     id="circle154" />
+  <text
+     x="892"
+     y="723.5"
+     text-anchor="end"
+     class="pin-num"
+     style="font-weight:700;fill:#e2e8f0"
+     id="text154">30</text>
+  <text
+     x="870"
+     y="724"
+     text-anchor="end"
+     class="pin-label"
+     style="font-size:11px;fill:#f8fafc"
+     id="text155">RUN</text>
+  <circle
+     cx="904"
+     cy="758"
+     r="5"
+     fill="#fef08a"
+     stroke="#ca8a04"
+     stroke-width="1.5"
+     id="circle155" />
+  <circle
+     cx="904"
+     cy="758"
+     r="2"
+     fill="#0f172a"
+     id="circle156" />
+  <text
+     x="892"
+     y="761.5"
+     text-anchor="end"
+     class="pin-num"
+     style="font-weight:700;fill:#e2e8f0"
+     id="text156">29</text>
+  <text
+     x="870"
+     y="762"
+     text-anchor="end"
+     class="pin-label"
+     style="font-size:11px;fill:#f8fafc"
+     id="text157">GP22</text>
+  <circle
+     cx="904"
+     cy="796"
+     r="5"
+     fill="#fef08a"
+     stroke="#ca8a04"
+     stroke-width="1.5"
+     id="circle157" />
+  <circle
+     cx="904"
+     cy="796"
+     r="2"
+     fill="#0f172a"
+     id="circle158" />
+  <text
+     x="892"
+     y="799.5"
+     text-anchor="end"
+     class="pin-num"
+     style="font-weight:700;fill:#e2e8f0"
+     id="text158">28</text>
+  <text
+     x="870"
+     y="800"
+     text-anchor="end"
+     class="pin-label"
+     style="font-size:11px;fill:#f8fafc"
+     id="text159">GND</text>
+  <circle
+     cx="904"
+     cy="834"
+     r="5"
+     fill="#fef08a"
+     stroke="#ca8a04"
+     stroke-width="1.5"
+     id="circle159" />
+  <circle
+     cx="904"
+     cy="834"
+     r="2"
+     fill="#0f172a"
+     id="circle160" />
+  <text
+     x="892"
+     y="837.5"
+     text-anchor="end"
+     class="pin-num"
+     style="font-weight:700;fill:#e2e8f0"
+     id="text160">27</text>
+  <text
+     x="870"
+     y="838"
+     text-anchor="end"
+     class="pin-label"
+     style="font-size:11px;fill:#f8fafc"
+     id="text161">GP21</text>
+  <circle
+     cx="904"
+     cy="872"
+     r="5"
+     fill="#fef08a"
+     stroke="#ca8a04"
+     stroke-width="1.5"
+     id="circle161" />
+  <circle
+     cx="904"
+     cy="872"
+     r="2"
+     fill="#0f172a"
+     id="circle162" />
+  <text
+     x="892"
+     y="875.5"
+     text-anchor="end"
+     class="pin-num"
+     style="font-weight:700;fill:#e2e8f0"
+     id="text162">26</text>
+  <text
+     x="870"
+     y="876"
+     text-anchor="end"
+     class="pin-label"
+     style="font-size:11px;fill:#f8fafc"
+     id="text163">GP20</text>
+  <circle
+     cx="904"
+     cy="910"
+     r="5"
+     fill="#fef08a"
+     stroke="#ca8a04"
+     stroke-width="1.5"
+     id="circle163" />
+  <circle
+     cx="904"
+     cy="910"
+     r="2"
+     fill="#0f172a"
+     id="circle164" />
+  <text
+     x="892"
+     y="913.5"
+     text-anchor="end"
+     class="pin-num"
+     style="font-weight:700;fill:#e2e8f0"
+     id="text164">25</text>
+  <text
+     x="870"
+     y="914"
+     text-anchor="end"
+     class="pin-label"
+     style="font-size:11px;fill:#f8fafc"
+     id="text165">GP19</text>
+  <circle
+     cx="904"
+     cy="948"
+     r="5"
+     fill="#fef08a"
+     stroke="#ca8a04"
+     stroke-width="1.5"
+     id="circle165" />
+  <circle
+     cx="904"
+     cy="948"
+     r="2"
+     fill="#0f172a"
+     id="circle166" />
+  <text
+     x="892"
+     y="951.5"
+     text-anchor="end"
+     class="pin-num"
+     style="font-weight:700;fill:#e2e8f0"
+     id="text166">24</text>
+  <text
+     x="870"
+     y="952"
+     text-anchor="end"
+     class="pin-label"
+     style="font-size:11px;fill:#f8fafc"
+     id="text167">GP18</text>
+  <circle
+     cx="904"
+     cy="986"
+     r="5"
+     fill="#fef08a"
+     stroke="#ca8a04"
+     stroke-width="1.5"
+     id="circle167" />
+  <circle
+     cx="904"
+     cy="986"
+     r="2"
+     fill="#0f172a"
+     id="circle168" />
+  <text
+     x="892"
+     y="989.5"
+     text-anchor="end"
+     class="pin-num"
+     style="font-weight:700;fill:#e2e8f0"
+     id="text168">23</text>
+  <text
+     x="870"
+     y="990"
+     text-anchor="end"
+     class="pin-label"
+     style="font-size:11px;fill:#f8fafc"
+     id="text169">GND</text>
+  <circle
+     cx="904"
+     cy="1024"
+     r="5"
+     fill="#fef08a"
+     stroke="#ca8a04"
+     stroke-width="1.5"
+     id="circle169" />
+  <circle
+     cx="904"
+     cy="1024"
+     r="2"
+     fill="#0f172a"
+     id="circle170" />
+  <text
+     x="892"
+     y="1027.5"
+     text-anchor="end"
+     class="pin-num"
+     style="font-weight:700;fill:#e2e8f0"
+     id="text170">22</text>
+  <text
+     x="870"
+     y="1028"
+     text-anchor="end"
+     class="pin-label"
+     style="font-size:11px;fill:#f8fafc"
+     id="text171">GP17</text>
+  <circle
+     cx="904"
+     cy="1062"
+     r="5"
+     fill="#fef08a"
+     stroke="#ca8a04"
+     stroke-width="1.5"
+     id="circle171" />
+  <circle
+     cx="904"
+     cy="1062"
+     r="2"
+     fill="#0f172a"
+     id="circle172" />
+  <text
+     x="892"
+     y="1065.5"
+     text-anchor="end"
+     class="pin-num"
+     style="font-weight:700;fill:#e2e8f0"
+     id="text172">21</text>
+  <text
+     x="870"
+     y="1066"
+     text-anchor="end"
+     class="pin-label"
+     style="font-size:11px;fill:#f8fafc"
+     id="text173">GP16</text>
+  <g
+     transform="translate(1060,215)"
+     filter="url(#shadow)"
+     id="g176">
+    <rect
+       x="0"
+       y="0"
+       width="490"
+       height="260"
+       rx="6"
+       fill="#ffffff"
+       stroke="#ef4444"
+       stroke-width="1.2"
+       id="rect173"
+       ry="6" />
+    <rect
+       x="0"
+       y="0"
+       width="490"
+       height="28"
+       rx="6"
+       fill="#fee2e2"
+       id="rect174"
+       ry="6" />
+    <rect
+       x="0"
+       y="20"
+       width="490"
+       height="8"
+       fill="#fee2e2"
+       id="rect175" />
+    <line
+       x1="0"
+       y1="28"
+       x2="490"
+       y2="28"
+       stroke="#ef4444"
+       stroke-width="1"
+       id="line175" />
+    <text
+       x="10"
+       y="19"
+       class="box-title"
+       id="text175">CASHINO CSN-A2 THERMAL PRINTER</text>
+    <text
+       x="480"
+       y="18"
+       text-anchor="end"
+       class="box-sub"
+       id="text176">58mm PANEL PRINTER</text>
+  </g>
+  <text
+     x="1076"
+     y="261"
+     class="callout-text"
+     style="font-weight:700;fill:#991b1b"
+     id="text177">High-Current Inductive / Thermal Load Subsystem</text>
+  <text
+     x="1076"
+     y="275"
+     class="callout-text"
+     id="text178">Print Head Peak: 1.8A–2.2A @ 5V DC • Stepper Motor Feed</text>
+  <rect
+     x="1075"
+     y="291"
+     width="280"
+     height="24"
+     rx="4"
+     fill="#fff1f2"
+     stroke="#fecdd3"
+     id="rect178"
+     ry="4" />
+  <circle
+     cx="1085"
+     cy="303"
+     r="3.5"
+     fill="#dc2626"
+     id="circle178" />
+  <text
+     x="1096"
+     y="307"
+     class="pin-label"
+     style="font-size:11px"
+     id="text179">VCC (5V-9V)</text>
+  <text
+     x="1345"
+     y="307"
+     text-anchor="end"
+     class="meta"
+     style="font-size:9px;fill:#64748b"
+     id="text180">High-Current +5V Input</text>
+  <rect
+     x="1075"
+     y="323"
+     width="280"
+     height="24"
+     rx="4"
+     fill="#fff1f2"
+     stroke="#fecdd3"
+     id="rect180"
+     ry="4" />
+  <circle
+     cx="1085"
+     cy="335"
+     r="3.5"
+     fill="#0f172a"
+     id="circle180" />
+  <text
+     x="1096"
+     y="339"
+     class="pin-label"
+     style="font-size:11px"
+     id="text181">GND (Power)</text>
+  <text
+     x="1345"
+     y="339"
+     text-anchor="end"
+     class="meta"
+     style="font-size:9px;fill:#64748b"
+     id="text182">Direct Heavy Return to Star Ground</text>
+  <rect
+     x="1075"
+     y="357"
+     width="280"
+     height="24"
+     rx="4"
+     fill="#fff1f2"
+     stroke="#fecdd3"
+     id="rect182"
+     ry="4" />
+  <circle
+     cx="1085"
+     cy="369"
+     r="3.5"
+     fill="#2563eb"
+     id="circle182" />
+  <text
+     x="1096"
+     y="373"
+     class="pin-label"
+     style="font-size:11px"
+     id="text183">RX (Data In)</text>
+  <text
+     x="1345"
+     y="373"
+     text-anchor="end"
+     class="meta"
+     style="font-size:9px;fill:#64748b"
+     id="text184">TTL Serial Receive (9600 Baud)</text>
+  <rect
+     x="1075"
+     y="391"
+     width="280"
+     height="24"
+     rx="4"
+     fill="#fff1f2"
+     stroke="#fecdd3"
+     id="rect184"
+     ry="4" />
+  <circle
+     cx="1085"
+     cy="403"
+     r="3.5"
+     fill="#0284c7"
+     id="circle184" />
+  <text
+     x="1096"
+     y="407"
+     class="pin-label"
+     style="font-size:11px"
+     id="text185">TX (Status)</text>
+  <text
+     x="1345"
+     y="407"
+     text-anchor="end"
+     class="meta"
+     style="font-size:9px;fill:#64748b"
+     id="text186">TTL Serial Transmit / Paper Sensor</text>
+  <rect
+     x="1075"
+     y="423"
+     width="280"
+     height="24"
+     rx="4"
+     fill="#fff1f2"
+     stroke="#fecdd3"
+     id="rect186"
+     ry="4" />
+  <circle
+     cx="1085"
+     cy="435"
+     r="3.5"
+     fill="#475569"
+     id="circle186" />
+  <text
+     x="1096"
+     y="439"
+     class="pin-label"
+     style="font-size:11px"
+     id="text187">GND (Logic)</text>
+  <text
+     x="1345"
+     y="439"
+     text-anchor="end"
+     class="meta"
+     style="font-size:9px;fill:#64748b"
+     id="text188">Tied Internally to Power Ground</text>
+  <g
+     transform="translate(1385,295)"
+     id="g196">
+    <rect
+       x="0"
+       y="0"
+       width="145"
+       height="150"
+       rx="6"
+       fill="#f8fafc"
+       stroke="#0284c7"
+       stroke-width="1.5"
+       id="rect188"
+       ry="6"
+       style="stroke:#00cdec;stroke-opacity:1" />
+    <text
+       x="72"
+       y="22"
+       text-anchor="middle"
+       class="callout-title"
+       style="fill:#0369a1"
+       id="text189">BUFFER CAPACITOR</text>
+    <text
+       x="72"
+       y="38"
+       text-anchor="middle"
+       class="meta"
+       style="font-weight:700;fill:#0284c7"
+       id="text190">1000 µF / 16V</text>
+    <text
+       x="72"
+       y="52"
+       text-anchor="middle"
+       class="meta"
+       style="font-size:8.5px;fill:#475569"
+       id="text191">Low-ESR Electrolytic</text>
+    <line
+       x1="30"
+       y1="80"
+       x2="60"
+       y2="80"
+       stroke="#dc2626"
+       stroke-width="2.5"
+       id="line191" />
+    <line
+       x1="60"
+       y1="65"
+       x2="60"
+       y2="95"
+       stroke="#dc2626"
+       stroke-width="3"
+       id="line192" />
+    <path
+       d="m 72,65 q -4,15 0,30"
+       stroke="#0f172a"
+       stroke-width="3"
+       fill="none"
+       id="path192" />
+    <line
+       x1="72"
+       y1="80"
+       x2="115"
+       y2="80"
+       stroke="#0f172a"
+       stroke-width="2.5"
+       id="line193" />
+    <text
+       x="45"
+       y="74"
+       class="pin-num"
+       style="font-weight:700;fill:#dc2626"
+       id="text193">+</text>
+    <text
+       x="95"
+       y="74"
+       class="pin-num"
+       style="font-weight:700;fill:#0f172a"
+       id="text194">-</text>
+    <text
+       x="72"
+       y="115"
+       text-anchor="middle"
+       class="callout-text"
+       style="font-size:9px;fill:#334155"
+       id="text195">Solder directly across</text>
+    <text
+       x="72"
+       y="128"
+       text-anchor="middle"
+       class="callout-text"
+       style="font-size:9px;fill:#334155"
+       id="text196">printer power lugs</text>
+    <path
+       style="fill:#d40000;stroke:#ec0000;stroke-width:3.78331;stroke-opacity:1"
+       d="m -29.4711,9.04387 h 29.235"
+       id="path267" />
+    <path
+       style="fill:#d40000;stroke:#000000;stroke-width:3.78331;stroke-opacity:1"
+       d="M -29.4711,41.20235 H -1.2106"
+       id="path268" />
+  </g>
+  <g
+     transform="translate(1060,510)"
+     filter="url(#shadow)"
+     id="g200">
+    <rect
+       x="0"
+       y="0"
+       width="490"
+       height="230"
+       rx="6"
+       fill="#ffffff"
+       stroke="#10b981"
+       stroke-width="1.2"
+       id="rect197"
+       ry="6"
+       style="stroke:#10d354;stroke-opacity:1" />
+    <rect
+       x="0"
+       y="0"
+       width="490"
+       height="28"
+       rx="6"
+       fill="#ecfdf5"
+       id="rect198"
+       ry="6" />
+    <rect
+       x="0"
+       y="20"
+       width="490"
+       height="8"
+       fill="#ecfdf5"
+       id="rect199" />
+    <line
+       x1="0"
+       y1="28"
+       x2="490"
+       y2="28"
+       stroke="#10b981"
+       stroke-width="1"
+       id="line199"
+       style="stroke:#10d354;stroke-opacity:1" />
+    <text
+       x="10"
+       y="19"
+       class="box-title"
+       id="text199">LCD1602 CHARACTER DISPLAY + I2C BACKPACK</text>
+    <text
+       x="480"
+       y="18"
+       text-anchor="end"
+       class="box-sub"
+       id="text200">PCF8574T (ADDR 0x27 / 0x3F)</text>
+  </g>
+  <text
+     x="1076"
+     y="556"
+     class="callout-text"
+     style="font-weight:600;fill:#065f46"
+     id="text201">HD44780 16x2 Display with 8-bit I2C Expander Backpack</text>
+  <text
+     x="1076"
+     y="570"
+     class="note-text"
+     id="text202">★ Right-Angle 90° Header mod applied: Reduces internal chassis depth to 14.5mm</text>
+  <rect
+     x="1075"
+     y="583"
+     width="280"
+     height="24"
+     rx="4"
+     fill="#f0fdf4"
+     stroke="#bbf7d0"
+     id="rect202"
+     ry="4" />
+  <circle
+     cx="1085"
+     cy="595"
+     r="3.5"
+     fill="#475569"
+     id="circle202" />
+  <text
+     x="1096"
+     y="599"
+     class="pin-label"
+     style="font-size:11px"
+     id="text203">GND</text>
+  <text
+     x="1345"
+     y="599"
+     text-anchor="end"
+     class="meta"
+     style="font-size:9px;fill:#64748b"
+     id="text204">Logic Ground Return</text>
+  <rect
+     x="1075"
+     y="616"
+     width="280"
+     height="24"
+     rx="4"
+     fill="#f0fdf4"
+     stroke="#bbf7d0"
+     id="rect204"
+     ry="4" />
+  <circle
+     cx="1085"
+     cy="628"
+     r="3.5"
+     fill="#ea580c"
+     id="circle204" />
+  <text
+     x="1096"
+     y="632"
+     class="pin-label"
+     style="font-size:11px"
+     id="text205">VCC</text>
+  <text
+     x="1345"
+     y="632"
+     text-anchor="end"
+     class="meta"
+     style="font-size:9px;fill:#64748b"
+     id="text206">+3.3V Logic Power (or 5V)</text>
+  <rect
+     x="1075"
+     y="650"
+     width="280"
+     height="24"
+     rx="4"
+     fill="#f0fdf4"
+     stroke="#bbf7d0"
+     id="rect206"
+     ry="4" />
+  <circle
+     cx="1085"
+     cy="662"
+     r="3.5"
+     fill="#059669"
+     id="circle206" />
+  <text
+     x="1096"
+     y="666"
+     class="pin-label"
+     style="font-size:11px"
+     id="text207">SDA</text>
+  <text
+     x="1345"
+     y="666"
+     text-anchor="end"
+     class="meta"
+     style="font-size:9px;fill:#64748b"
+     id="text208">I2C Serial Data Bus</text>
+  <rect
+     x="1075"
+     y="684"
+     width="280"
+     height="24"
+     rx="4"
+     fill="#f0fdf4"
+     stroke="#bbf7d0"
+     id="rect208"
+     ry="4" />
+  <circle
+     cx="1085"
+     cy="696"
+     r="3.5"
+     fill="#10b981"
+     id="circle208" />
+  <text
+     x="1096"
+     y="700"
+     class="pin-label"
+     style="font-size:11px"
+     id="text209">SCL</text>
+  <text
+     x="1345"
+     y="700"
+     text-anchor="end"
+     class="meta"
+     style="font-size:9px;fill:#64748b"
+     id="text210">I2C Serial Clock Bus</text>
+  <g
+     transform="translate(1385,590)"
+     id="g213">
+    <rect
+       x="0"
+       y="0"
+       width="145"
+       height="125"
+       rx="6"
+       fill="#ffffff"
+       stroke="#94a3b8"
+       id="rect210"
+       ry="6" />
+    <text
+       x="72"
+       y="22"
+       text-anchor="middle"
+       class="callout-title"
+       style="fill:#334155"
+       id="text211">CONTRAST TRIMMER</text>
+    <circle
+       cx="72"
+       cy="55"
+       r="22"
+       fill="#f1f5f9"
+       stroke="#64748b"
+       stroke-width="1.5"
+       id="circle211" />
+    <line
+       x1="60"
+       y1="55"
+       x2="84"
+       y2="55"
+       stroke="#0f172a"
+       stroke-width="2"
+       id="line211" />
+    <text
+       x="72"
+       y="94"
+       text-anchor="middle"
+       class="callout-text"
+       style="font-size:9px"
+       id="text212">10kΩ Potentiometer</text>
+    <text
+       x="72"
+       y="108"
+       text-anchor="middle"
+       class="meta"
+       style="font-size:8.5px;fill:#059669"
+       id="text213">Default pull-ups: 4.7kΩ</text>
+  </g>
+  <g
+     transform="translate(1060,775)"
+     filter="url(#shadow)"
+     id="g216">
+    <rect
+       x="0"
+       y="0"
+       width="490"
+       height="230"
+       rx="6"
+       fill="#ffffff"
+       stroke="#06b6d4"
+       stroke-width="1.2"
+       id="rect213"
+       ry="6" />
+    <rect
+       x="0"
+       y="0"
+       width="490"
+       height="28"
+       rx="6"
+       fill="#ecfeff"
+       id="rect214"
+       ry="6" />
+    <rect
+       x="0"
+       y="20"
+       width="490"
+       height="8"
+       fill="#ecfeff"
+       id="rect215" />
+    <line
+       x1="0"
+       y1="28"
+       x2="490"
+       y2="28"
+       stroke="#06b6d4"
+       stroke-width="1"
+       id="line215" />
+    <text
+       x="10"
+       y="19"
+       class="box-title"
+       id="text215">DS3231 PRECISION REAL-TIME CLOCK</text>
+    <text
+       x="480"
+       y="18"
+       text-anchor="end"
+       class="box-sub"
+       id="text216">ZS-042 MODULE (I2C ADDR 0x68)</text>
+  </g>
+  <text
+     x="1076"
+     y="821"
+     class="callout-text"
+     style="font-weight:600;fill:#0e7490"
+     id="text217">TCXO Temperature Compensated Crystal Oscillator with Battery Backup</text>
+  <rect
+     x="1075"
+     y="845"
+     width="280"
+     height="21"
+     rx="4"
+     fill="#f0fdfa"
+     stroke="#ccfbf1"
+     id="rect217"
+     ry="4" />
+  <circle
+     cx="1085"
+     cy="855"
+     r="3"
+     fill="#64748b"
+     id="circle217" />
+  <text
+     x="1096"
+     y="858.5"
+     class="pin-label"
+     style="font-size:10.5px"
+     id="text218">32K</text>
+  <text
+     x="1345"
+     y="858.5"
+     text-anchor="end"
+     class="meta"
+     style="font-size:9px;fill:#64748b"
+     id="text219">32.768 kHz Output (Unused)</text>
+  <rect
+     x="1075"
+     y="873"
+     width="280"
+     height="21"
+     rx="4"
+     fill="#f0fdfa"
+     stroke="#ccfbf1"
+     id="rect219"
+     ry="4" />
+  <circle
+     cx="1085"
+     cy="883"
+     r="3"
+     fill="#64748b"
+     id="circle219" />
+  <text
+     x="1096"
+     y="886.5"
+     class="pin-label"
+     style="font-size:10.5px"
+     id="text220">SQW</text>
+  <text
+     x="1345"
+     y="886.5"
+     text-anchor="end"
+     class="meta"
+     style="font-size:9px;fill:#64748b"
+     id="text221">Square Wave / Int (Unused)</text>
+  <rect
+     x="1075"
+     y="901"
+     width="280"
+     height="21"
+     rx="4"
+     fill="#f0fdfa"
+     stroke="#ccfbf1"
+     id="rect221"
+     ry="4" />
+  <circle
+     cx="1085"
+     cy="911"
+     r="3"
+     fill="#10b981"
+     id="circle221" />
+  <text
+     x="1096"
+     y="914.5"
+     class="pin-label"
+     style="font-size:10.5px"
+     id="text222">SCL</text>
+  <text
+     x="1345"
+     y="914.5"
+     text-anchor="end"
+     class="meta"
+     style="font-size:9px;fill:#64748b"
+     id="text223">I2C Serial Clock Bus</text>
+  <rect
+     x="1075"
+     y="929"
+     width="280"
+     height="21"
+     rx="4"
+     fill="#f0fdfa"
+     stroke="#ccfbf1"
+     id="rect223"
+     ry="4" />
+  <circle
+     cx="1085"
+     cy="939"
+     r="3"
+     fill="#059669"
+     id="circle223" />
+  <text
+     x="1096"
+     y="942.5"
+     class="pin-label"
+     style="font-size:10.5px"
+     id="text224">SDA</text>
+  <text
+     x="1345"
+     y="942.5"
+     text-anchor="end"
+     class="meta"
+     style="font-size:9px;fill:#64748b"
+     id="text225">I2C Serial Data Bus</text>
+  <rect
+     x="1075"
+     y="957"
+     width="280"
+     height="21"
+     rx="4"
+     fill="#f0fdfa"
+     stroke="#ccfbf1"
+     id="rect225"
+     ry="4" />
+  <circle
+     cx="1085"
+     cy="967"
+     r="3"
+     fill="#ea580c"
+     id="circle225" />
+  <text
+     x="1096"
+     y="970.5"
+     class="pin-label"
+     style="font-size:10.5px"
+     id="text226">VCC</text>
+  <text
+     x="1345"
+     y="970.5"
+     text-anchor="end"
+     class="meta"
+     style="font-size:9px;fill:#64748b"
+     id="text227">+3.3V Logic Power Input</text>
+  <rect
+     x="1075"
+     y="985"
+     width="280"
+     height="21"
+     rx="4"
+     fill="#f0fdfa"
+     stroke="#ccfbf1"
+     id="rect227"
+     ry="4" />
+  <circle
+     cx="1085"
+     cy="995"
+     r="3"
+     fill="#475569"
+     id="circle227" />
+  <text
+     x="1096"
+     y="998.5"
+     class="pin-label"
+     style="font-size:10.5px"
+     id="text228">GND</text>
+  <text
+     x="1345"
+     y="998.5"
+     text-anchor="end"
+     class="meta"
+     style="font-size:9px;fill:#64748b"
+     id="text229">Clean Logic Ground Return</text>
+  <g
+     transform="translate(1375,850)"
+     id="g236">
+    <rect
+       x="0"
+       y="0"
+       width="160"
+       height="135"
+       rx="6"
+       fill="#fffbeb"
+       stroke="#f59e0b"
+       stroke-width="1.5"
+       id="rect229"
+       ry="6" />
+    <text
+       x="80"
+       y="20"
+       text-anchor="middle"
+       class="callout-title"
+       style="font-size:10px;fill:#92400e"
+       id="text230">★ CR2032 DIODE MOD</text>
+    <circle
+       cx="80"
+       cy="52"
+       r="22"
+       fill="#e2e8f0"
+       stroke="#94a3b8"
+       stroke-width="1.5"
+       id="circle230" />
+    <text
+       x="80"
+       y="55"
+       text-anchor="middle"
+       class="meta"
+       style="font-weight:700;font-size:9px;fill:#1e293b"
+       id="text231">CR2032</text>
+    <text
+       x="80"
+       y="65"
+       text-anchor="middle"
+       class="meta"
+       style="font-size:8px;fill:#475569"
+       id="text232">3V Lithium</text>
+    <text
+       x="80"
+       y="92"
+       text-anchor="middle"
+       class="callout-text"
+       style="font-weight:700;font-size:9px;fill:#b45309"
+       id="text233">IMPORTANT CRITICAL STEP:</text>
+    <text
+       x="80"
+       y="105"
+       text-anchor="middle"
+       class="callout-text"
+       style="font-size:8.5px;fill:#78350f"
+       id="text234">Desolder/cut diode D1 &amp; R200</text>
+    <text
+       x="80"
+       y="117"
+       text-anchor="middle"
+       class="callout-text"
+       style="font-size:8.5px;fill:#78350f"
+       id="text235">to disable charging circuit</text>
+    <text
+       x="80"
+       y="127"
+       text-anchor="middle"
+       class="callout-text"
+       style="font-size:8.5px;fill:#78350f"
+       id="text236">for non-rechargeable cells.</text>
+  </g>
+  <circle
+     cx="260"
+     cy="305"
+     r="3"
+     fill="#dc2626"
+     id="circle236" />
+  <path
+     d="M 260,305 H 400 V 195 h 600 v 108 h 75"
+     class="pwr-wire"
+     id="path236"
+     sodipodi:nodetypes="cccccc" />
+  <path
+     d="M 940,195 V 378 H 904"
+     class="pwr-wire"
+     id="path237"
+     sodipodi:nodetypes="ccc" />
+  <circle
+     cx="940"
+     cy="195"
+     r="3.5"
+     class="node-dot"
+     fill="#dc2626"
+     id="circle237" />
+  <path
+     d="M 315.96545,353.35152 380,352.37702 V 172.43654 151 h 660 v 184 h 35"
+     class="gnd-star"
+     id="path238"
+     sodipodi:nodetypes="ccccccc" />
+  <path
+     d="M 960,150.69686 V 416 h -56"
+     class="gnd-star"
+     id="path239"
+     sodipodi:nodetypes="ccc" />
+  <circle
+     cx="960"
+     cy="151"
+     r="4.5"
+     class="node-dot"
+     fill="#0f172a"
+     id="circle239" />
+  <path
+     d="m 904,492 h 56 v 136 h 115"
+     class="pwr-3v3"
+     id="path240" />
+  <path
+     d="m 960,628 v 339 h 115"
+     class="pwr-3v3"
+     id="path241" />
+  <circle
+     cx="960"
+     cy="628"
+     r="3.5"
+     class="node-dot"
+     fill="#ea580c"
+     id="circle241" />
+  <path
+     d="m 904,416 h 36 v 179 h 135"
+     class="gnd-clean"
+     id="path242" />
+  <path
+     d="m 940,595 v 400 h 135"
+     class="gnd-clean"
+     id="path243" />
+  <circle
+     cx="940"
+     cy="595"
+     r="3"
+     class="node-dot"
+     fill="#475569"
+     id="circle243" />
+  <path
+     d="M 496,416 H 420 V 756 H 320"
+     class="gnd-clean"
+     id="path244" />
+  <path
+     d="M 420,756 V 886 H 320"
+     class="gnd-clean"
+     id="path245" />
+  <path
+     d="m 420,886 v 73 H 309"
+     class="gnd-clean"
+     id="path246" />
+  <circle
+     cx="420"
+     cy="756"
+     r="3"
+     class="node-dot"
+     fill="#475569"
+     id="circle246" />
+  <circle
+     cx="420"
+     cy="886"
+     r="3"
+     class="node-dot"
+     fill="#475569"
+     id="circle247" />
+  <path
+     d="M 496,530 H 435 V 211 h 549 v 158 h 91"
+     class="uart-tx"
+     id="path247"
+     sodipodi:nodetypes="cccccc" />
+  <path
+     d="m 1075,403 h -64 V 166 H 408 v 402 h 88"
+     class="uart-rx"
+     id="path248"
+     sodipodi:nodetypes="cccccc"
+     style="stroke:#00cdec;stroke-opacity:1" />
+  <path
+     d="M 496,340 H 465 V 133 h 558 v 529 h 52"
+     class="i2c-sda"
+     id="path249"
+     sodipodi:nodetypes="cccccc" />
+  <path
+     d="m 1035,662 v 277 h 40"
+     class="i2c-sda"
+     id="path250" />
+  <circle
+     cx="1035"
+     cy="662"
+     r="3.5"
+     class="node-dot"
+     fill="#059669"
+     id="circle250" />
+  <path
+     d="M 496,376.22014 H 450 V 113 h 598 v 582.99999 h 27"
+     class="i2c-scl"
+     id="path251"
+     sodipodi:nodetypes="cccccc"
+     style="stroke:#10d354;stroke-opacity:1" />
+  <path
+     d="m 1048,696 v 215 h 27"
+     class="i2c-scl"
+     id="path252"
+     style="stroke:#10d354;stroke-opacity:1" />
+  <circle
+     cx="1048"
+     cy="696"
+     r="3.5"
+     class="node-dot"
+     fill="#10b981"
+     id="circle252" />
+  <path
+     d="M 320,531 496,644"
+     class="gpio-wire"
+     id="path253" />
+  <path
+     d="M 320,557 496,682"
+     class="gpio-wire"
+     id="path254" />
+  <path
+     d="M 320,583 496,720"
+     class="gpio-wire"
+     id="path255" />
+  <path
+     d="M 320,609 496,758"
+     class="gpio-wire"
+     id="path256" />
+  <path
+     d="M 320,635 496,834"
+     class="gpio-wire"
+     id="path257" />
+  <path
+     d="M 320,661 496,872"
+     class="gpio-wire"
+     id="path258" />
+  <path
+     d="M 320,687 496,910"
+     class="gpio-wire"
+     id="path259" />
+  <path
+     d="M 320,713 496,948"
+     class="gpio-wire"
+     id="path260" />
+  <path
+     d="m 320,871 176,153"
+     class="pwm-wire"
+     stroke="#7c3aed"
+     id="path261" />
+  <path
+     d="m 308.28125,941 h 42.66335 v 121 H 496"
+     class="pwm-wire"
+     stroke="#a855f7"
+     id="path262" />
+  <rect
+     x="1120"
+     y="1025"
+     width="455"
+     height="100"
+     rx="8"
+     fill="#ffffff"
+     stroke="#94a3b8"
+     stroke-width="1.2"
+     filter="url(#shadow)"
+     id="rect262" />
+  <text
+     x="1136"
+     y="1051"
+     class="title"
+     style="font-size: 15px;"
+     id="text262">DCC PRINTER — ELECTRICAL SCHEMATIC</text>
+  <text
+     x="1136"
+     y="1069"
+     class="subtitle"
+     style="font-size: 12px;"
+     id="text263">PSAM 2230 Device Art • Milestone 2 Functional Architecture</text>
+  <line
+     x1="1136"
+     y1="1079"
+     x2="1559"
+     y2="1079"
+     stroke="#e2e8f0"
+     stroke-width="1"
+     id="line263" />
+  <text
+     x="1136"
+     y="1097"
+     class="meta"
+     id="text264">DESIGNER: Ariel Churi</text>
+  <text
+     x="1340"
+     y="1097"
+     class="meta"
+     id="text265">DATE: October 2026</text>
+  <text
+     x="1136"
+     y="1113"
+     class="meta"
+     id="text266">CONTROLLER: Raspberry Pi Pico (RP2040)</text>
+  <text
+     x="1450"
+     y="1113"
+     class="meta"
+     id="text267">REV: 2.0 (MERGED)</text>
 </svg>
